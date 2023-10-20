@@ -88,7 +88,6 @@ dns:
 proxies:
   - {"name":"hysteria2_meta_0","type":"hysteria2","server":"108.181.22.205","port":51443,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"hysteria2_meta_1","type":"hysteria2","server":"www2.dtku49.xyz","port":54406,"password":"ebcbb37b","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"defaultName","server":"tuic3.dtku47.xyz","port":12255,"password":"dongtaiwang","uuid":"ed6a538a-6e66-4f21-a769-4b389bb2f3ab","alpn":["h3"],"udp-relay-mode":"native","congestion_control":"bbr"}
   - {"name":"hysteria2_meta_3","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"hysteria_meta_4","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"mqoE9qSoyMFa","up":50,"down":80}
   - {"name":"hysteria2_meta_5","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
@@ -121,7 +120,6 @@ proxy-groups:
       - DIRECT
       - hysteria2_meta_0
       - hysteria2_meta_1
-      - defaultName
       - hysteria2_meta_3
       - hysteria_meta_4
       - hysteria2_meta_5
@@ -154,7 +152,6 @@ proxy-groups:
     proxies:
       - hysteria2_meta_0
       - hysteria2_meta_1
-      - defaultName
       - hysteria2_meta_3
       - hysteria_meta_4
       - hysteria2_meta_5
@@ -187,7 +184,6 @@ proxy-groups:
       - 🎯 全球直连
       - hysteria2_meta_0
       - hysteria2_meta_1
-      - defaultName
       - hysteria2_meta_3
       - hysteria_meta_4
       - hysteria2_meta_5
@@ -219,7 +215,6 @@ proxy-groups:
       - 🎯 全球直连
       - hysteria2_meta_0
       - hysteria2_meta_1
-      - defaultName
       - hysteria2_meta_3
       - hysteria_meta_4
       - hysteria2_meta_5
@@ -251,7 +246,6 @@ proxy-groups:
       - 🚀 节点选择
       - hysteria2_meta_0
       - hysteria2_meta_1
-      - defaultName
       - hysteria2_meta_3
       - hysteria_meta_4
       - hysteria2_meta_5
@@ -332,7 +326,6 @@ proxy-groups:
       - ♻️ 自动选择
       - hysteria2_meta_0
       - hysteria2_meta_1
-      - defaultName
       - hysteria2_meta_3
       - hysteria_meta_4
       - hysteria2_meta_5
