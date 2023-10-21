@@ -1,3 +1,11 @@
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash.Meta
+# 创建时间：2023-10-21 14:33:08
+# 使用模版：V2RaySE 默认模版
+# 节点数量：25
+####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -78,55 +86,66 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"hysteria2_meta_0","type":"hysteria2","server":"108.181.22.205","port":51443,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"hysteria2_meta_1","type":"hysteria2","server":"www2.dtku49.xyz","port":54406,"password":"ebcbb37b","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"tuic","server":"tuic3.dtku47.xyz","port":12255,"password":"dongtaiwang","uuid":"ed6a538a-6e66-4f21-a769-4b389bb2f3ab","alpn":["h3"],"udp-relay-mode":"native","congestion_control":"bbr"}
-  - {"name":"hysteria2_meta_3","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"hysteria_meta_4","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"mqoE9qSoyMFa","up":50,"down":1000}
-  - {"name":"hysteria2_meta_5","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"hysteria_meta_6","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"jQrGpwSqp34P","up":50,"down":1000}
-  - {"name":"hysteria_meta_7","type":"hysteria","server":"clash1.dtku47.xyz","port":11223,"skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"O5tQQiW2xKf5","up":50,"down":1000}
-  - {"name":"hysteria_meta_8","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"jQrGpwSqp34P","up":50,"down":1000}
-  - {"name":"hysteria_meta_9","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"lASdKzWK0VxL","up":50,"down":1000}
-  - {"name":"hysteria_meta_10","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"jQrGpwSqp34P","up":50,"down":1000}
-  - {"name":"hysteria_meta_11","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"skip-cert-verify":false,"alpn":["h3"],"protocol":"udp","auth_str":"lASdKzWK0VxL","up":50,"down":1000}
-  - {"name":"hysteria_meta_12","type":"hysteria","server":"108.181.22.239","port":17727,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"","up":50,"down":1000}
-  - {"name":"hysteria_meta_13","type":"hysteria","server":"www.dtku50.xyz","port":43250,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"","up":50,"down":1000}
-  - {"name":"vless_meta_14","type":"vless","server":"45.150.165.79","port":25678,"udp":true,"uuid":"34f36b97-1fb7-41f3-8db4-912cc69e724a","tls":true,"servername":"","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"sJsSZcA2DyAHDTcoe8Utbz9JaXJPMVmtHmiXxWmcExc"},"client-fingerprint":"chrome"}
-  - {"name":"hysteria_meta_15","type":"hysteria","server":"www3.dtku49.xyz","port":58693,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"","up":50,"down":1000}
-  - {"name":"hysteria_0","type":"hysteria","server":"167.160.91.115","port":13928,"sni":"paypal.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"BF0LL4L2jlqSdW3KxjQv81AiFFjj90vWRHeUoqUuTVPeDAGvq3","up":50,"down":1000}
-  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":100,"down":1000}
-  - {"name":"hysteria_2","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":100,"down":1000}
-  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":100,"down":1000}
-  - {"name":"hysteria2_0","type":"hysteria2","server":"108.181.22.155","port":46728,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"hysteria2_1","type":"hysteria2","server":"167.160.90.252","port":60930,"password":"fc4488ef","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"hysteria2_2","type":"hysteria2","server":"www.dtku46.xyz","port":60626,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"hysteria2_3","type":"hysteria2","server":"www.dtku48.xyz","port":56411,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"vless_0","type":"vless","server":"dongtaiwang3.com","port":443,"uuid":"0773256c-d020-436d-afea-6eee7cb6c872","tls":true,"servername":"xray1.freegradely.xyz","flow":"","network":"ws","ws-opts":{"path":"/bodhws","headers":{"host":"xray1.freegradely.xyz"}},"client-fingerprint":"chrome"}
-  - {"name":"vless_2","type":"vless","server":"dongtaiwang3.com","port":443,"uuid":"f5c180eb-fbce-49ac-9029-482eca9385c0","tls":true,"servername":"xray1.freeh1.xyz","flow":"","network":"ws","ws-opts":{"path":"/gzogws","headers":{"host":"xray1.freeh1.xyz"}},"client-fingerprint":"chrome"}
-  - {"name":"vless_3","type":"vless","server":"dongtaiwang2.com","port":443,"uuid":"f5c180eb-fbce-49ac-9029-482eca9385c0","tls":true,"servername":"xray1.freeh1.xyz","flow":"","network":"ws","ws-opts":{"path":"/gzogws","headers":{"host":"xray1.freeh1.xyz"}},"client-fingerprint":"chrome"}
+  - {"name":"meta_hysteria2_01","type":"hysteria2","server":"108.181.22.205","port":51443,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"meta_hysteria2_11","type":"hysteria2","server":"www2.dtku49.xyz","port":54406,"password":"ebcbb37b","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"meta_tuic_21","type":"tuic","server":"tuic3.dtku47.xyz","port":12255,"password":"dongtaiwang","uuid":"ed6a538a-6e66-4f21-a769-4b389bb2f3ab","alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
+  - {"name":"meta_hysteria2_31","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"meta_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":1000}
+  - {"name":"meta_hysteria2_51","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"meta_hysteria_61","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_71","type":"hysteria","server":"clash1.dtku47.xyz","port":11223,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_81","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_91","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_101","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_111","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_121","type":"hysteria","server":"108.181.22.239","port":17727,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"7YxfKsXdTnB226S8j4OjaA9M0nLcXATvgnXhVJbCRG7e9KKU7i","up":100,"down":1000}
+  - {"name":"meta_hysteria_131","type":"hysteria","server":"www.dtku50.xyz","port":43250,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"2S9M5Gs0pgRsaTObNghoLZx6wPkBJOGTFWvf4R06Us5hUNtfr7","up":100,"down":1000}
+  - {"name":"meta_vless_141","type":"vless","server":"45.150.165.79","port":25678,"udp":true,"uuid":"34f36b97-1fb7-41f3-8db4-912cc69e724a","tls":true,"servername":"itunes.apple.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"sJsSZcA2DyAHDTcoe8Utbz9JaXJPMVmtHmiXxWmcExc"},"client-fingerprint":"chrome"}
+  - {"name":"meta_hysteria_151","type":"hysteria","server":"www3.dtku49.xyz","port":58693,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh","up":100,"down":1000}
+  - {"name":"hysteria_0","type":"hysteria","server":"167.160.91.115","port":13928,"sni":"paypal.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"BF0LL4L2jlqSdW3KxjQv81AiFFjj90vWRHeUoqUuTVPeDAGvq3","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_2","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria2_0","type":"hysteria2","server":"108.181.22.155","port":46728,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"hysteria2_1","type":"hysteria2","server":"167.160.90.252","port":60930,"password":"fc4488ef","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"hysteria2_2","type":"hysteria2","server":"www.dtku46.xyz","port":60626,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"hysteria2_3","type":"hysteria2","server":"www.dtku48.xyz","port":56411,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"cfip.gay","type":"vless","server":"cfip.gay","port":443,"uuid":"712f4d04-373f-4250-b0e2-0e0512fcd4d3","tls":true,"servername":"cf1111.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf1111.pages.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"xiaoyi-黑弩优选","type":"vless","server":"heinu.noaries.de","port":80,"uuid":"bc6dd18a-c129-4265-86c3-42abe36832f8","tls":false,"servername":"xiaoyi.youyashuai02.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"xiaoyi.youyashuai02.workers.dev"}}}
+  - {"name":"cdn-b100.xn--b6gac.eu.org","type":"vless","server":"cdn-b100.xn--b6gac.eu.org","port":443,"uuid":"712f4d04-373f-4250-b0e2-0e0512fcd4d3","tls":true,"servername":"cf1111.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf1111.pages.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"443.cf.bestl.de","type":"vless","server":"443.cf.bestl.de","port":443,"uuid":"712f4d04-373f-4250-b0e2-0e0512fcd4d3","tls":true,"servername":"cf1111.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf1111.pages.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"cn.king360.eu.org","type":"vless","server":"cn.king360.eu.org","port":443,"uuid":"712f4d04-373f-4250-b0e2-0e0512fcd4d3","tls":true,"servername":"cf1111.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf1111.pages.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"opop.200307.xyz","type":"vless","server":"opop.200307.xyz","port":443,"uuid":"712f4d04-373f-4250-b0e2-0e0512fcd4d3","tls":true,"servername":"cf1111.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf1111.pages.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"cdn-all.xn--b6gac.eu.org","type":"vless","server":"cdn-all.xn--b6gac.eu.org","port":443,"uuid":"712f4d04-373f-4250-b0e2-0e0512fcd4d3","tls":true,"servername":"cf1111.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf1111.pages.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"xiaoyi-韩国02","type":"vless","server":"34.149.64.36","port":80,"uuid":"bc6dd18a-c129-4265-86c3-42abe36832f8","tls":false,"servername":"xiaoyi.youyashuai02.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"xiaoyi.youyashuai02.workers.dev"}}}
+  - {"name":"Cloudflare-hostmonit","type":"vless","server":"stock.hostmonit.com","port":80,"uuid":"3e036e57-4d74-469a-b312-b97b59680ec3","tls":false,"servername":"youyashuai.youyashuai01.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"youyashuai.youyashuai01.workers.dev"}}}
+  - {"name":"xiaoyi-zpro","type":"vless","server":"cfa.zpro.pro","port":80,"uuid":"bc6dd18a-c129-4265-86c3-42abe36832f8","tls":false,"servername":"xiaoyi.youyashuai02.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"xiaoyi.youyashuai02.workers.dev"}}}
+  - {"name":"xiaoyi-cf商业段","type":"vless","server":"tech.noaries.de","port":80,"uuid":"bc6dd18a-c129-4265-86c3-42abe36832f8","tls":false,"servername":"xiaoyi.youyashuai02.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"xiaoyi.youyashuai02.workers.dev"}}}
+  - {"name":"Cloudflare-CSGO","type":"vless","server":"csgo.com","port":80,"uuid":"3e036e57-4d74-469a-b312-b97b59680ec3","tls":false,"servername":"youyashuai.youyashuai01.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"youyashuai.youyashuai01.workers.dev"}}}
+  - {"name":"xiaoyi-Aries频道","type":"vless","server":"cf.noaries.de","port":80,"uuid":"bc6dd18a-c129-4265-86c3-42abe36832f8","tls":false,"servername":"xiaoyi.youyashuai02.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"xiaoyi.youyashuai02.workers.dev"}}}
+  - {"name":"Cloudflare日本成田2-clone","type":"vless","server":"198.41.195.85","port":80,"uuid":"3e036e57-4d74-469a-b312-b97b59680ec3","tls":false,"servername":"youyashuai.youyashuai01.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"youyashuai.youyashuai01.workers.dev"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - hysteria2_meta_0
-      - hysteria2_meta_1
-      - tuic
-      - hysteria2_meta_3
-      - hysteria_meta_4
-      - hysteria2_meta_5
-      - hysteria_meta_6
-      - hysteria_meta_7
-      - hysteria_meta_8
-      - hysteria_meta_9
-      - hysteria_meta_10
-      - hysteria_meta_11
-      - hysteria_meta_12
-      - hysteria_meta_13
-      - vless_meta_14
-      - hysteria_meta_15
+      - meta_hysteria2_01
+      - meta_hysteria2_11
+      - meta_tuic_21
+      - meta_hysteria2_31
+      - meta_hysteria_41
+      - meta_hysteria2_51
+      - meta_hysteria_61
+      - meta_hysteria_71
+      - meta_hysteria_81
+      - meta_hysteria_91
+      - meta_hysteria_101
+      - meta_hysteria_111
+      - meta_hysteria_121
+      - meta_hysteria_131
+      - meta_vless_141
+      - meta_hysteria_151
       - hysteria_0
       - hysteria_1
       - hysteria_2
@@ -135,31 +154,42 @@ proxy-groups:
       - hysteria2_1
       - hysteria2_2
       - hysteria2_3
-      - vless_0
-      - vless_2
-      - vless_3
+      - cfip.gay
+      - xiaoyi-黑弩优选
+      - cdn-b100.xn--b6gac.eu.org
+      - 443.cf.bestl.de
+      - cn.king360.eu.org
+      - opop.200307.xyz
+      - cdn-all.xn--b6gac.eu.org
+      - xiaoyi-韩国02
+      - Cloudflare-hostmonit
+      - xiaoyi-zpro
+      - xiaoyi-cf商业段
+      - Cloudflare-CSGO
+      - xiaoyi-Aries频道
+      - Cloudflare日本成田2-clone      
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - hysteria2_meta_0
-      - hysteria2_meta_1
-      - tuic
-      - hysteria2_meta_3
-      - hysteria_meta_4
-      - hysteria2_meta_5
-      - hysteria_meta_6
-      - hysteria_meta_7
-      - hysteria_meta_8
-      - hysteria_meta_9
-      - hysteria_meta_10
-      - hysteria_meta_11
-      - hysteria_meta_12
-      - hysteria_meta_13
-      - vless_meta_14
-      - hysteria_meta_15
+      - meta_hysteria2_01
+      - meta_hysteria2_11
+      - meta_tuic_21
+      - meta_hysteria2_31
+      - meta_hysteria_41
+      - meta_hysteria2_51
+      - meta_hysteria_61
+      - meta_hysteria_71
+      - meta_hysteria_81
+      - meta_hysteria_91
+      - meta_hysteria_101
+      - meta_hysteria_111
+      - meta_hysteria_121
+      - meta_hysteria_131
+      - meta_vless_141
+      - meta_hysteria_151
       - hysteria_0
       - hysteria_1
       - hysteria_2
@@ -168,31 +198,42 @@ proxy-groups:
       - hysteria2_1
       - hysteria2_2
       - hysteria2_3
-      - vless_0
-      - vless_2
-      - vless_3
+      - cfip.gay
+      - xiaoyi-黑弩优选
+      - cdn-b100.xn--b6gac.eu.org
+      - 443.cf.bestl.de
+      - cn.king360.eu.org
+      - opop.200307.xyz
+      - cdn-all.xn--b6gac.eu.org
+      - xiaoyi-韩国02
+      - Cloudflare-hostmonit
+      - xiaoyi-zpro
+      - xiaoyi-cf商业段
+      - Cloudflare-CSGO
+      - xiaoyi-Aries频道
+      - Cloudflare日本成田2-clone      
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - hysteria2_meta_0
-      - hysteria2_meta_1
-      - tuic
-      - hysteria2_meta_3
-      - hysteria_meta_4
-      - hysteria2_meta_5
-      - hysteria_meta_6
-      - hysteria_meta_7
-      - hysteria_meta_8
-      - hysteria_meta_9
-      - hysteria_meta_10
-      - hysteria_meta_11
-      - hysteria_meta_12
-      - hysteria_meta_13
-      - vless_meta_14
-      - hysteria_meta_15
+      - meta_hysteria2_01
+      - meta_hysteria2_11
+      - meta_tuic_21
+      - meta_hysteria2_31
+      - meta_hysteria_41
+      - meta_hysteria2_51
+      - meta_hysteria_61
+      - meta_hysteria_71
+      - meta_hysteria_81
+      - meta_hysteria_91
+      - meta_hysteria_101
+      - meta_hysteria_111
+      - meta_hysteria_121
+      - meta_hysteria_131
+      - meta_vless_141
+      - meta_hysteria_151
       - hysteria_0
       - hysteria_1
       - hysteria_2
@@ -201,30 +242,41 @@ proxy-groups:
       - hysteria2_1
       - hysteria2_2
       - hysteria2_3
-      - vless_0
-      - vless_2
-      - vless_3
+      - cfip.gay
+      - xiaoyi-黑弩优选
+      - cdn-b100.xn--b6gac.eu.org
+      - 443.cf.bestl.de
+      - cn.king360.eu.org
+      - opop.200307.xyz
+      - cdn-all.xn--b6gac.eu.org
+      - xiaoyi-韩国02
+      - Cloudflare-hostmonit
+      - xiaoyi-zpro
+      - xiaoyi-cf商业段
+      - Cloudflare-CSGO
+      - xiaoyi-Aries频道
+      - Cloudflare日本成田2-clone      
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - hysteria2_meta_0
-      - hysteria2_meta_1
-      - tuic
-      - hysteria2_meta_3
-      - hysteria_meta_4
-      - hysteria2_meta_5
-      - hysteria_meta_6
-      - hysteria_meta_7
-      - hysteria_meta_8
-      - hysteria_meta_9
-      - hysteria_meta_10
-      - hysteria_meta_11
-      - hysteria_meta_12
-      - hysteria_meta_13
-      - vless_meta_14
-      - hysteria_meta_15
+      - meta_hysteria2_01
+      - meta_hysteria2_11
+      - meta_tuic_21
+      - meta_hysteria2_31
+      - meta_hysteria_41
+      - meta_hysteria2_51
+      - meta_hysteria_61
+      - meta_hysteria_71
+      - meta_hysteria_81
+      - meta_hysteria_91
+      - meta_hysteria_101
+      - meta_hysteria_111
+      - meta_hysteria_121
+      - meta_hysteria_131
+      - meta_vless_141
+      - meta_hysteria_151
       - hysteria_0
       - hysteria_1
       - hysteria_2
@@ -233,30 +285,41 @@ proxy-groups:
       - hysteria2_1
       - hysteria2_2
       - hysteria2_3
-      - vless_0
-      - vless_2
-      - vless_3
+      - cfip.gay
+      - xiaoyi-黑弩优选
+      - cdn-b100.xn--b6gac.eu.org
+      - 443.cf.bestl.de
+      - cn.king360.eu.org
+      - opop.200307.xyz
+      - cdn-all.xn--b6gac.eu.org
+      - xiaoyi-韩国02
+      - Cloudflare-hostmonit
+      - xiaoyi-zpro
+      - xiaoyi-cf商业段
+      - Cloudflare-CSGO
+      - xiaoyi-Aries频道
+      - Cloudflare日本成田2-clone      
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - hysteria2_meta_0
-      - hysteria2_meta_1
-      - tuic
-      - hysteria2_meta_3
-      - hysteria_meta_4
-      - hysteria2_meta_5
-      - hysteria_meta_6
-      - hysteria_meta_7
-      - hysteria_meta_8
-      - hysteria_meta_9
-      - hysteria_meta_10
-      - hysteria_meta_11
-      - hysteria_meta_12
-      - hysteria_meta_13
-      - vless_meta_14
-      - hysteria_meta_15
+      - meta_hysteria2_01
+      - meta_hysteria2_11
+      - meta_tuic_21
+      - meta_hysteria2_31
+      - meta_hysteria_41
+      - meta_hysteria2_51
+      - meta_hysteria_61
+      - meta_hysteria_71
+      - meta_hysteria_81
+      - meta_hysteria_91
+      - meta_hysteria_101
+      - meta_hysteria_111
+      - meta_hysteria_121
+      - meta_hysteria_131
+      - meta_vless_141
+      - meta_hysteria_151
       - hysteria_0
       - hysteria_1
       - hysteria_2
@@ -265,30 +328,41 @@ proxy-groups:
       - hysteria2_1
       - hysteria2_2
       - hysteria2_3
-      - vless_0
-      - vless_2
-      - vless_3
+      - cfip.gay
+      - xiaoyi-黑弩优选
+      - cdn-b100.xn--b6gac.eu.org
+      - 443.cf.bestl.de
+      - cn.king360.eu.org
+      - opop.200307.xyz
+      - cdn-all.xn--b6gac.eu.org
+      - xiaoyi-韩国02
+      - Cloudflare-hostmonit
+      - xiaoyi-zpro
+      - xiaoyi-cf商业段
+      - Cloudflare-CSGO
+      - xiaoyi-Aries频道
+      - Cloudflare日本成田2-clone      
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - hysteria2_meta_0
-      - hysteria2_meta_1
-      - tuic
-      - hysteria2_meta_3
-      - hysteria_meta_4
-      - hysteria2_meta_5
-      - hysteria_meta_6
-      - hysteria_meta_7
-      - hysteria_meta_8
-      - hysteria_meta_9
-      - hysteria_meta_10
-      - hysteria_meta_11
-      - hysteria_meta_12
-      - hysteria_meta_13
-      - vless_meta_14
-      - hysteria_meta_15
+      - meta_hysteria2_01
+      - meta_hysteria2_11
+      - meta_tuic_21
+      - meta_hysteria2_31
+      - meta_hysteria_41
+      - meta_hysteria2_51
+      - meta_hysteria_61
+      - meta_hysteria_71
+      - meta_hysteria_81
+      - meta_hysteria_91
+      - meta_hysteria_101
+      - meta_hysteria_111
+      - meta_hysteria_121
+      - meta_hysteria_131
+      - meta_vless_141
+      - meta_hysteria_151
       - hysteria_0
       - hysteria_1
       - hysteria_2
@@ -297,9 +371,20 @@ proxy-groups:
       - hysteria2_1
       - hysteria2_2
       - hysteria2_3
-      - vless_0
-      - vless_2
-      - vless_3
+      - cfip.gay
+      - xiaoyi-黑弩优选
+      - cdn-b100.xn--b6gac.eu.org
+      - 443.cf.bestl.de
+      - cn.king360.eu.org
+      - opop.200307.xyz
+      - cdn-all.xn--b6gac.eu.org
+      - xiaoyi-韩国02
+      - Cloudflare-hostmonit
+      - xiaoyi-zpro
+      - xiaoyi-cf商业段
+      - Cloudflare-CSGO
+      - xiaoyi-Aries频道
+      - Cloudflare日本成田2-clone      
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -322,22 +407,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - hysteria2_meta_0
-      - hysteria2_meta_1
-      - tuic
-      - hysteria2_meta_3
-      - hysteria_meta_4
-      - hysteria2_meta_5
-      - hysteria_meta_6
-      - hysteria_meta_7
-      - hysteria_meta_8
-      - hysteria_meta_9
-      - hysteria_meta_10
-      - hysteria_meta_11
-      - hysteria_meta_12
-      - hysteria_meta_13
-      - vless_meta_14
-      - hysteria_meta_15
+      - meta_hysteria2_01
+      - meta_hysteria2_11
+      - meta_tuic_21
+      - meta_hysteria2_31
+      - meta_hysteria_41
+      - meta_hysteria2_51
+      - meta_hysteria_61
+      - meta_hysteria_71
+      - meta_hysteria_81
+      - meta_hysteria_91
+      - meta_hysteria_101
+      - meta_hysteria_111
+      - meta_hysteria_121
+      - meta_hysteria_131
+      - meta_vless_141
+      - meta_hysteria_151
       - hysteria_0
       - hysteria_1
       - hysteria_2
@@ -346,9 +431,20 @@ proxy-groups:
       - hysteria2_1
       - hysteria2_2
       - hysteria2_3
-      - vless_0
-      - vless_2
-      - vless_3
+      - cfip.gay
+      - xiaoyi-黑弩优选
+      - cdn-b100.xn--b6gac.eu.org
+      - 443.cf.bestl.de
+      - cn.king360.eu.org
+      - opop.200307.xyz
+      - cdn-all.xn--b6gac.eu.org
+      - xiaoyi-韩国02
+      - Cloudflare-hostmonit
+      - xiaoyi-zpro
+      - xiaoyi-cf商业段
+      - Cloudflare-CSGO
+      - xiaoyi-Aries频道
+      - Cloudflare日本成田2-clone      
 
 rules:
 # 本地/局域网地址
