@@ -86,27 +86,26 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"油管-绵阿羊","type":"trojan","server":"a","port":1,"udp":true,"password":"72ac875a-f5b9-461e-a7a4-942b468b0d83","sni":"gw.alicdn.com","skip-cert-verify":true}
   - {"name":"meta_hysteria2_01","type":"hysteria2","server":"108.181.22.205","port":51443,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"meta_hysteria2_11","type":"hysteria2","server":"www2.dtku49.xyz","port":54406,"password":"ebcbb37b","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"meta_tuic_21","type":"tuic","server":"tuic3.dtku47.xyz","port":12255,"password":"dongtaiwang","uuid":"ed6a538a-6e66-4f21-a769-4b389bb2f3ab","alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
   - {"name":"meta_hysteria2_31","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"meta_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
+  - {"name":"meta_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":1000}
   - {"name":"meta_hysteria2_51","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"meta_hysteria_61","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
-  - {"name":"meta_hysteria_71","type":"hysteria","server":"clash1.dtku47.xyz","port":11223,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
-  - {"name":"meta_hysteria_81","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
-  - {"name":"meta_hysteria_91","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
-  - {"name":"meta_hysteria_101","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
-  - {"name":"meta_hysteria_111","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
-  - {"name":"meta_hysteria_121","type":"hysteria","server":"108.181.22.239","port":17727,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"7YxfKsXdTnB226S8j4OjaA9M0nLcXATvgnXhVJbCRG7e9KKU7i","up":11,"down":55}
-  - {"name":"meta_hysteria_131","type":"hysteria","server":"www.dtku50.xyz","port":43250,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"2S9M5Gs0pgRsaTObNghoLZx6wPkBJOGTFWvf4R06Us5hUNtfr7","up":2,"down":10}
+  - {"name":"meta_hysteria_61","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":100,"down":1000}
+  - {"name":"meta_hysteria_71","type":"hysteria","server":"clash1.dtku47.xyz","port":11223,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_81","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_91","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_101","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_111","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
+  - {"name":"meta_hysteria_121","type":"hysteria","server":"108.181.22.239","port":17727,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"7YxfKsXdTnB226S8j4OjaA9M0nLcXATvgnXhVJbCRG7e9KKU7i","up":100,"down":1000}
+  - {"name":"meta_hysteria_131","type":"hysteria","server":"www.dtku50.xyz","port":43250,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"2S9M5Gs0pgRsaTObNghoLZx6wPkBJOGTFWvf4R06Us5hUNtfr7","up":100,"down":1000}
   - {"name":"meta_vless_141","type":"vless","server":"45.150.165.79","port":25678,"udp":true,"uuid":"34f36b97-1fb7-41f3-8db4-912cc69e724a","tls":true,"servername":"itunes.apple.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"sJsSZcA2DyAHDTcoe8Utbz9JaXJPMVmtHmiXxWmcExc"},"client-fingerprint":"chrome"}
-  - {"name":"meta_hysteria_151","type":"hysteria","server":"www3.dtku49.xyz","port":58693,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh","up":11,"down":55}
-  - {"name":"hysteria_0","type":"hysteria","server":"167.160.91.115","port":13928,"sni":"paypal.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"BF0LL4L2jlqSdW3KxjQv81AiFFjj90vWRHeUoqUuTVPeDAGvq3","up":80,"down":100,"fast-open":true}
-  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":100,"fast-open":true}
-  - {"name":"hysteria_2","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":100,"fast-open":true}
-  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":100,"fast-open":true}
+  - {"name":"meta_hysteria_151","type":"hysteria","server":"www3.dtku49.xyz","port":58693,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh","up":100,"down":1000}
+  - {"name":"hysteria_0","type":"hysteria","server":"167.160.91.115","port":13928,"sni":"paypal.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"BF0LL4L2jlqSdW3KxjQv81AiFFjj90vWRHeUoqUuTVPeDAGvq3","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_2","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":1000,"fast-open":true}
   - {"name":"hysteria2_0","type":"hysteria2","server":"108.181.22.155","port":46728,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_1","type":"hysteria2","server":"167.160.90.252","port":60930,"password":"fc4488ef","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_2","type":"hysteria2","server":"www.dtku46.xyz","port":60626,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
@@ -117,7 +116,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 油管-绵阿羊
       - meta_hysteria2_01
       - meta_hysteria2_11
       - meta_tuic_21
@@ -148,7 +146,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 油管-绵阿羊
       - meta_hysteria2_01
       - meta_hysteria2_11
       - meta_tuic_21
@@ -179,7 +176,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管-绵阿羊
       - meta_hysteria2_01
       - meta_hysteria2_11
       - meta_tuic_21
@@ -209,7 +205,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 油管-绵阿羊
       - meta_hysteria2_01
       - meta_hysteria2_11
       - meta_tuic_21
@@ -239,7 +234,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 油管-绵阿羊
       - meta_hysteria2_01
       - meta_hysteria2_11
       - meta_tuic_21
@@ -269,7 +263,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 油管-绵阿羊
       - meta_hysteria2_01
       - meta_hysteria2_11
       - meta_tuic_21
@@ -316,7 +309,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管-绵阿羊
       - meta_hysteria2_01
       - meta_hysteria2_11
       - meta_tuic_21
