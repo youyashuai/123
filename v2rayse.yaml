@@ -92,7 +92,7 @@ proxies:
   - {"name":"meta_hysteria2_31","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"meta_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":1000}
   - {"name":"meta_hysteria2_51","type":"hysteria2","server":"108.181.24.7","port":30682,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"meta_hysteria_61","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":100,"down":1000}
+  - {"name":"meta_hysteria_61","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
   - {"name":"meta_hysteria_71","type":"hysteria","server":"clash1.dtku47.xyz","port":11223,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
   - {"name":"meta_hysteria_81","type":"hysteria","server":"hy2.dtku47.xyz","port":15566,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
   - {"name":"meta_hysteria_91","type":"hysteria","server":"hy1.dtku47.xyz","port":22334,"alpn":["h3"],"protocol":"udp","up":50,"down":1000}
