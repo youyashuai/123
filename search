@@ -1,1 +1,54 @@
 - {"name":"🇭🇰 香港家宽丨SYQ @200Mbps","type":"ss","server":"hks03.bigpings.com","port":23218,"password":"f42ab2fa-391b-4ce2-8b90-7720504f2632","cipher":"chacha20-ietf-poly1305"}
+- {"name":"🇰🇷 韩国 B158 | IEPL中转、游戏 | 0x","type":"trojan","server":"183.213.200.208","port":28157,"udp":true,"password":"M83a100a","sni":"www.icloud.com","skip-cert-verify":true,"network":"tcp"}
+- {"name":"🇰🇷_KR_韩国->🇺🇸_US_美国","type":"ss","server":"free.node.kk-proxy.pro","port":54455,"password":"235fa4fe-078c-4bd9-bb4f-d799d3193d3f","cipher":"chacha20-ietf-poly1305"}
+
+
+
+
+
+proxies:
+  - {"name":"US ywcloud rn","type":"trojan","server":"rn.ywcloud.cf","port":443,"udp":true,"password":"3cab4355-1a73-4b27-b744-64cc64602dd3","sni":"rn.ywcloud.cf","skip-cert-verify":true,"network":"tcp","ws-opts":{"headers":{"host":"rn.ywcloud.cf"}}}
+  - {"name":"JP ywcloud ry","type":"trojan","server":"ry.ywcloud.cf","port":443,"udp":true,"password":"5eb2c89b-57e8-4fb8-9c22-66ba06479b1d","sni":"ry.ywcloud.cf","skip-cert-verify":true,"network":"tcp","ws-opts":{"headers":{"host":"ry.ywcloud.cf"}}}
+  - {"name":"JP ywcloud xyz","type":"trojan","server":"xyz.ywcloud.cf","port":443,"udp":true,"password":"bcae8acb-6362-4663-92d3-26246ef88fed","sni":"xyz.ywcloud.cf","skip-cert-verify":true,"network":"tcp","ws-opts":{"headers":{"host":"xyz.ywcloud.cf"}}}
+  - {"name":"SG ywcloud cf","type":"trojan","server":"ly.ywcloud.cf","port":443,"udp":true,"password":"pnZFeHeXu6","skip-cert-verify":true}
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - US ywcloud rn
+      - JP ywcloud ry
+      - JP ywcloud xyz
+      - SG ywcloud cf
+
+
+
+
+proxies:
+  - {"name":"v2rayse_test_1","type":"ss","server":"198.57.27.218","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
+  - {"name":"v2rayse_test_2","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"v2rayse_test_3","type":"vmess","server":"154.23.190.162","port":443,"cipher":"auto","uuid":"b9984674-f771-4e67-a198-c7e60720ba2c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"defaultName_1","type":"ssr","server":"20.239.49.44","port":59814,"password":"3df57276-03ef-45cf-bdd4-4edb6dfaa0ef","cipher":"dummy","obfs":"plain","protocol":"origin","group":"https://v2rayse.com"}
+  - {"name":"v2rayse_test_4","type":"trojan","server":"ca-trojan.bonds.id","port":443,"udp":true,"password":"bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272","skip-cert-verify":true}
+  - {"name":"defaultName_2","type":"http","server":"124.15.12.24","port":251,"username":"username","password":"password"}
+  - {"name":"defaultName_3","type":"socks5","server":"124.15.12.24","port":2312}
+  - {"name":"Hys-1.2.3.4","type":"hysteria","server":"1.2.3.4","port":12854,"sni":"wechat.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"pekopeko","up":50,"down":250}
+  - {"name":"test","type":"vless","server":"1.2.3.4","port":7777,"uuid":"abc-def-ghi-fge-zsx","tls":true,"network":"tcp"}
+  - {"name":"defaultName_4","type":"socks5","server":"1.2.3.4","port":123,"username":"username","password":"password"}
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - v2rayse_test_1
+      - v2rayse_test_2
+      - v2rayse_test_3
+      - defaultName_1
+      - v2rayse_test_4
+      - defaultName_2
+      - defaultName_3
+      - Hys-1.2.3.4
+      - test
+      - defaultName_4
