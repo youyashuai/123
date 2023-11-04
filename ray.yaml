@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-11-04 21:36:11
+# 创建时间：2023-11-04 21:38:40
 # 使用模版：ACL4SSR_Online.ini
 # 节点数量：21
 # 节点类型：trojan, tuic, hysteria2, hysteria, vless
@@ -87,22 +87,21 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"油管-绵阿羊","type":"trojan","server":"a","port":1,"udp":true,"password":"72ac875a-f5b9-461e-a7a4-942b468b0d83","sni":"gw.alicdn.com","skip-cert-verify":true}
   - {"name":"meta_tuic_01","type":"tuic","server":"109.104.152.219","port":19008,"password":"dongtaiwang.com","uuid":"9f8c2f3e-cb9e-410f-9b87-f1615ac1a1bb","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
-  - {"name":"meta_hysteria2_02","type":"hysteria2","server":"167.160.90.251","port":10981,"password":"i2XRv7zj1uWE","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"up":100,"down":50}
+  - {"name":"meta_hysteria2_02","type":"hysteria2","server":"167.160.90.251","port":10981,"password":"i2XRv7zj1uWE","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"up":100,"down":1000}
   - {"name":"meta_tuic_11","type":"tuic","server":"tuic1.freeh1.xyz","port":40981,"password":"dongtaiwang","uuid":"c2faac69-e1c1-4bf5-b8a8-d2ce4d834a66","sni":"tuic1.freeh1.xyz","skip-cert-verify":false,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
   - {"name":"meta_tuic_21","type":"tuic","server":"tuic3.dtku47.xyz","port":12255,"password":"dongtaiwang","uuid":"ed6a538a-6e66-4f21-a769-4b389bb2f3ab","alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
   - {"name":"meta_tuic_31","type":"tuic","server":"108.181.24.7","port":23450,"password":"dongtaiwang","uuid":"3618921b-adeb-4bd3-a2a0-f98b72a674b1","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
   - {"name":"meta_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":50,"down":100}
   - {"name":"meta_tuic_51","type":"tuic","server":"108.181.22.205","port":50987,"password":"dongtaiwang","uuid":"d6214437-e1b5-4334-9090-8f66b78bea89","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
   - {"name":"meta_tuic_61","type":"tuic","server":"www2.dtku49.xyz","port":19881,"password":"51UMpwpdw0Kw","uuid":"45e2b23a-1a49-49c4-9422-8d786887ef3d","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
-  - {"name":"meta_hysteria_71","type":"hysteria","server":"www.dtku50.xyz","port":14751,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY","up":2,"down":10}
-  - {"name":"meta_hysteria_81","type":"hysteria","server":"62.204.54.81","port":37899,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB","up":10,"down":50}
-  - {"name":"meta_hysteria_91","type":"hysteria","server":"www3.dtku49.xyz","port":58693,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh","up":11,"down":55}
-  - {"name":"hysteria_0","type":"hysteria","server":"108.181.22.239","port":61561,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"PBhG3zqMKaMO5ZnemDvLrZ6v0Fd7EqCutDvzLNtvWHJ6IpMWJg","up":80,"down":100,"fast-open":true}
-  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":100,"fast-open":true}
-  - {"name":"hysteria_2","type":"hysteria","server":"109.104.152.149","port":48406,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"xfNhrunYJ9GvDXCTktY2bIwhc1EyeyyAbiUMx1UtBOWgI4cMVB","up":80,"down":100,"fast-open":true}
-  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":100,"fast-open":true}
+  - {"name":"meta_hysteria_71","type":"hysteria","server":"www.dtku50.xyz","port":14751,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY","up":100,"down":1000}
+  - {"name":"meta_hysteria_81","type":"hysteria","server":"62.204.54.81","port":37899,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB","up":100,"down":1000}
+  - {"name":"meta_hysteria_91","type":"hysteria","server":"www3.dtku49.xyz","port":58693,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh","up":100,"down":1000}
+  - {"name":"hysteria_0","type":"hysteria","server":"108.181.22.239","port":61561,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"PBhG3zqMKaMO5ZnemDvLrZ6v0Fd7EqCutDvzLNtvWHJ6IpMWJg","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_2","type":"hysteria","server":"109.104.152.149","port":48406,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"xfNhrunYJ9GvDXCTktY2bIwhc1EyeyyAbiUMx1UtBOWgI4cMVB","up":80,"down":1000,"fast-open":true}
+  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":1000,"fast-open":true}
   - {"name":"hysteria2_0","type":"hysteria2","server":"www.dtku46.xyz","port":13579,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_1","type":"hysteria2","server":"108.181.22.155","port":4980,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_2","type":"hysteria2","server":"www.dtku48.xyz","port":43735,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
@@ -114,7 +113,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
@@ -141,7 +139,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
@@ -168,7 +165,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
@@ -194,7 +190,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
@@ -220,7 +215,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
@@ -246,7 +240,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
@@ -273,7 +266,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
@@ -316,7 +308,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管-绵阿羊
       - meta_tuic_01
       - meta_hysteria2_02
       - meta_tuic_11
