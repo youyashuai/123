@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-11-09 14:01:29
+# 创建时间：2023-11-10 10:42:56
 # 使用模版：ACL4SSR_Online.ini
 # 节点数量：19
 # 节点类型：tuic, hysteria2, hysteria
@@ -94,7 +94,7 @@ proxies:
   - {"name":"meta_tuic_31","type":"tuic","server":"108.181.24.7","port":23450,"password":"dongtaiwang","uuid":"3618921b-adeb-4bd3-a2a0-f98b72a674b1","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
   - {"name":"meta_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":1000}
   - {"name":"meta_tuic_51","type":"tuic","server":"108.181.22.205","port":50987,"password":"dongtaiwang","uuid":"d6214437-e1b5-4334-9090-8f66b78bea89","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
-  - {"name":"meta_hysteria_61","type":"hysteria","server":"www2.dtku49.xyz","port":37363,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"n8Paxd1Uad5wisPoT6i43lrerK1O5iQRfHnbI3RRsIrbdkyLZP","up":100,"down":1000}
+  - {"name":"meta_tuic_61","type":"tuic","server":"108.181.22.239","port":19988,"password":"dongtaiwang.com","uuid":"485ce799-da5f-46e8-a82b-8ef322d8602f","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
   - {"name":"meta_hysteria_71","type":"hysteria","server":"www.dtku50.xyz","port":14751,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY","up":100,"down":1000}
   - {"name":"meta_hysteria_81","type":"hysteria","server":"62.204.54.81","port":37899,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB","up":100,"down":1000}
   - {"name":"meta_hysteria_91","type":"hysteria","server":"www3.dtku49.xyz","port":58693,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh","up":100,"down":1000}
@@ -104,7 +104,7 @@ proxies:
   - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":1000,"fast-open":true}
   - {"name":"hysteria2_0","type":"hysteria2","server":"www.dtku46.xyz","port":49730,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_1","type":"hysteria2","server":"108.181.22.155","port":37987,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
-  - {"name":"hysteria2_2","type":"hysteria2","server":"www.dtku48.xyz","port":9907,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"hysteria2_2","type":"hysteria2","server":"www.dtku48.xyz","port":12107,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_3","type":"hysteria2","server":"108.181.22.155","port":37987,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -119,7 +119,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
@@ -144,7 +144,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
@@ -169,7 +169,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
@@ -193,7 +193,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
@@ -217,7 +217,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
@@ -241,7 +241,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
@@ -266,7 +266,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
@@ -307,7 +307,7 @@ proxy-groups:
       - meta_tuic_31
       - meta_hysteria_41
       - meta_tuic_51
-      - meta_hysteria_61
+      - meta_tuic_61
       - meta_hysteria_71
       - meta_hysteria_81
       - meta_hysteria_91
