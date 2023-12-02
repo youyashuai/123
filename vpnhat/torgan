@@ -1,0 +1,912 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+proxies:
+    - { name: HK香港1, type: trojan, server: 183.236.51.9, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港2, type: trojan, server: 183.236.51.9, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港3, type: trojan, server: 183.236.51.9, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港4, type: trojan, server: 183.236.51.9, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港5, type: trojan, server: 183.236.51.9, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港6, type: trojan, server: 183.236.51.9, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港7, type: trojan, server: 183.236.51.9, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港8, type: trojan, server: 183.236.51.9, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港9, type: trojan, server: 183.236.51.9, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港10, type: trojan, server: 183.236.51.9, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港11, type: trojan, server: 183.236.51.8, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港12, type: trojan, server: 183.236.51.8, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港13, type: trojan, server: 183.236.51.8, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港14, type: trojan, server: 183.236.51.8, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港15, type: trojan, server: 183.236.51.8, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港16, type: trojan, server: 183.236.51.8, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港17, type: trojan, server: 183.236.51.8, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港18, type: trojan, server: 183.236.51.8, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港19, type: trojan, server: 183.236.51.8, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港20, type: trojan, server: 183.236.51.8, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港21, type: trojan, server: 183.236.51.7, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港22, type: trojan, server: 183.236.51.7, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港23, type: trojan, server: 183.236.51.7, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港24, type: trojan, server: 183.236.51.7, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港25, type: trojan, server: 183.236.51.7, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港26, type: trojan, server: 183.236.51.7, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港27, type: trojan, server: 183.236.51.7, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港28, type: trojan, server: 183.236.51.7, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港29, type: trojan, server: 183.236.51.7, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港30, type: trojan, server: 183.236.51.7, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港31, type: trojan, server: 183.236.51.6, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港32, type: trojan, server: 183.236.51.6, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港33, type: trojan, server: 183.236.51.6, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港34, type: trojan, server: 183.236.51.6, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港35, type: trojan, server: 183.236.51.6, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港36, type: trojan, server: 183.236.51.6, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港37, type: trojan, server: 183.236.51.6, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港38, type: trojan, server: 183.236.51.6, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港39, type: trojan, server: 183.236.51.6, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港40, type: trojan, server: 183.236.51.6, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港41, type: trojan, server: 183.236.51.5, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港42, type: trojan, server: 183.236.51.5, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港43, type: trojan, server: 183.236.51.5, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港44, type: trojan, server: 183.236.51.5, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港45, type: trojan, server: 183.236.51.5, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港46, type: trojan, server: 183.236.51.5, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港47, type: trojan, server: 183.236.51.5, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港48, type: trojan, server: 183.236.51.5, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港49, type: trojan, server: 183.236.51.5, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港50, type: trojan, server: 183.236.51.5, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港51, type: trojan, server: 183.236.51.4, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港52, type: trojan, server: 183.236.51.4, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港53, type: trojan, server: 183.236.51.4, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港54, type: trojan, server: 183.236.51.4, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港55, type: trojan, server: 183.236.51.4, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港56, type: trojan, server: 183.236.51.4, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港57, type: trojan, server: 183.236.51.4, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港58, type: trojan, server: 183.236.51.4, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港59, type: trojan, server: 183.236.51.4, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港60, type: trojan, server: 183.236.51.4, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港61, type: trojan, server: 183.236.51.3, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港62, type: trojan, server: 183.236.51.3, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港63, type: trojan, server: 183.236.51.3, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港64, type: trojan, server: 183.236.51.3, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港65, type: trojan, server: 183.236.51.3, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港66, type: trojan, server: 183.236.51.3, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港67, type: trojan, server: 183.236.51.3, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港68, type: trojan, server: 183.236.51.3, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港69, type: trojan, server: 183.236.51.3, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港70, type: trojan, server: 183.236.51.3, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港71, type: trojan, server: 183.236.51.2, port: 10810, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港72, type: trojan, server: 183.236.51.2, port: 10809, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港73, type: trojan, server: 183.236.51.2, port: 10808, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港74, type: trojan, server: 183.236.51.2, port: 10807, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港75, type: trojan, server: 183.236.51.2, port: 10806, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港76, type: trojan, server: 183.236.51.2, port: 10805, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港77, type: trojan, server: 183.236.51.2, port: 10804, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港78, type: trojan, server: 183.236.51.2, port: 10803, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港79, type: trojan, server: 183.236.51.2, port: 10802, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: HK香港80, type: trojan, server: 183.236.51.2, port: 10801, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国1, type: trojan, server: 183.236.51.9, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国2, type: trojan, server: 183.236.51.8, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国3, type: trojan, server: 183.236.51.7, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国4, type: trojan, server: 183.236.51.6, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国5, type: trojan, server: 183.236.51.5, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国6, type: trojan, server: 183.236.51.4, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国7, type: trojan, server: 183.236.51.3, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: KR韩国8, type: trojan, server: 183.236.51.2, port: 10836, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷1, type: trojan, server: 183.236.51.9, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷2, type: trojan, server: 183.236.51.8, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷3, type: trojan, server: 183.236.51.7, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷4, type: trojan, server: 183.236.51.6, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷5, type: trojan, server: 183.236.51.5, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷6, type: trojan, server: 183.236.51.4, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷7, type: trojan, server: 183.236.51.3, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AR阿根廷8, type: trojan, server: 183.236.51.2, port: 10847, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜1, type: trojan, server: 183.236.51.9, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜2, type: trojan, server: 183.236.51.8, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜3, type: trojan, server: 183.236.51.7, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜4, type: trojan, server: 183.236.51.6, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜5, type: trojan, server: 183.236.51.5, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜6, type: trojan, server: 183.236.51.4, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜7, type: trojan, server: 183.236.51.3, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AE迪拜8, type: trojan, server: 183.236.51.2, port: 10841, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国1, type: trojan, server: 183.236.51.9, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国2, type: trojan, server: 183.236.51.8, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国3, type: trojan, server: 183.236.51.7, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国4, type: trojan, server: 183.236.51.6, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国5, type: trojan, server: 183.236.51.5, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国6, type: trojan, server: 183.236.51.4, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国7, type: trojan, server: 183.236.51.3, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: GB英国8, type: trojan, server: 183.236.51.2, port: 10837, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国01, type: trojan, server: 183.236.51.9, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国02, type: trojan, server: 183.236.51.9, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国03, type: trojan, server: 183.236.51.9, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国04, type: trojan, server: 183.236.51.9, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国05, type: trojan, server: 183.236.51.9, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国06, type: trojan, server: 183.236.51.9, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国07, type: trojan, server: 183.236.51.9, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国08, type: trojan, server: 183.236.51.9, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国09, type: trojan, server: 183.236.51.8, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国10, type: trojan, server: 183.236.51.8, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国11, type: trojan, server: 183.236.51.8, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国12, type: trojan, server: 183.236.51.8, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国13, type: trojan, server: 183.236.51.8, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国14, type: trojan, server: 183.236.51.8, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国15, type: trojan, server: 183.236.51.8, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国16, type: trojan, server: 183.236.51.8, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国17, type: trojan, server: 183.236.51.7, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国18, type: trojan, server: 183.236.51.7, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国19, type: trojan, server: 183.236.51.7, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国20, type: trojan, server: 183.236.51.7, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国21, type: trojan, server: 183.236.51.7, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国22, type: trojan, server: 183.236.51.7, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国23, type: trojan, server: 183.236.51.7, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国24, type: trojan, server: 183.236.51.7, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国25, type: trojan, server: 183.236.51.6, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国26, type: trojan, server: 183.236.51.6, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国27, type: trojan, server: 183.236.51.6, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国28, type: trojan, server: 183.236.51.6, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国29, type: trojan, server: 183.236.51.6, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国30, type: trojan, server: 183.236.51.6, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国31, type: trojan, server: 183.236.51.6, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国32, type: trojan, server: 183.236.51.6, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国33, type: trojan, server: 183.236.51.5, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国34, type: trojan, server: 183.236.51.5, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国35, type: trojan, server: 183.236.51.5, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国36, type: trojan, server: 183.236.51.5, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国37, type: trojan, server: 183.236.51.5, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国38, type: trojan, server: 183.236.51.5, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国39, type: trojan, server: 183.236.51.5, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国40, type: trojan, server: 183.236.51.5, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国41, type: trojan, server: 183.236.51.4, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国42, type: trojan, server: 183.236.51.4, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国43, type: trojan, server: 183.236.51.4, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国44, type: trojan, server: 183.236.51.4, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国45, type: trojan, server: 183.236.51.4, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国46, type: trojan, server: 183.236.51.4, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国47, type: trojan, server: 183.236.51.4, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国48, type: trojan, server: 183.236.51.4, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国49, type: trojan, server: 183.236.51.3, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国50, type: trojan, server: 183.236.51.3, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国51, type: trojan, server: 183.236.51.3, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国52, type: trojan, server: 183.236.51.3, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国53, type: trojan, server: 183.236.51.3, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国54, type: trojan, server: 183.236.51.3, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国55, type: trojan, server: 183.236.51.3, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国56, type: trojan, server: 183.236.51.3, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国57, type: trojan, server: 183.236.51.2, port: 10826, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国58, type: trojan, server: 183.236.51.2, port: 10825, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国59, type: trojan, server: 183.236.51.2, port: 10824, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国60, type: trojan, server: 183.236.51.2, port: 10823, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国61, type: trojan, server: 183.236.51.2, port: 10822, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国62, type: trojan, server: 183.236.51.2, port: 10821, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国63, type: trojan, server: 183.236.51.2, port: 10820, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: US美国64, type: trojan, server: 183.236.51.2, port: 10819, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰1, type: trojan, server: 183.236.51.9, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰2, type: trojan, server: 183.236.51.8, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰3, type: trojan, server: 183.236.51.7, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰4, type: trojan, server: 183.236.51.6, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰5, type: trojan, server: 183.236.51.5, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰6, type: trojan, server: 183.236.51.4, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰7, type: trojan, server: 183.236.51.3, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IE爱尔兰8, type: trojan, server: 183.236.51.2, port: 10850, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国1, type: trojan, server: 183.236.51.9, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国2, type: trojan, server: 183.236.51.8, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国3, type: trojan, server: 183.236.51.7, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国4, type: trojan, server: 183.236.51.6, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国5, type: trojan, server: 183.236.51.5, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国6, type: trojan, server: 183.236.51.4, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国7, type: trojan, server: 183.236.51.3, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: FR法国8, type: trojan, server: 183.236.51.2, port: 10838, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本1, type: trojan, server: 183.236.51.9, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本2, type: trojan, server: 183.236.51.9, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本3, type: trojan, server: 183.236.51.9, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本4, type: trojan, server: 183.236.51.9, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本5, type: trojan, server: 183.236.51.9, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本6, type: trojan, server: 183.236.51.9, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本7, type: trojan, server: 183.236.51.9, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本8, type: trojan, server: 183.236.51.9, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本9, type: trojan, server: 183.236.51.8, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本10, type: trojan, server: 183.236.51.8, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本11, type: trojan, server: 183.236.51.8, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本12, type: trojan, server: 183.236.51.8, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本13, type: trojan, server: 183.236.51.8, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本14, type: trojan, server: 183.236.51.8, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本15, type: trojan, server: 183.236.51.8, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本16, type: trojan, server: 183.236.51.8, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本17, type: trojan, server: 183.236.51.7, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本18, type: trojan, server: 183.236.51.7, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本19, type: trojan, server: 183.236.51.7, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本20, type: trojan, server: 183.236.51.7, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本21, type: trojan, server: 183.236.51.7, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本22, type: trojan, server: 183.236.51.7, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本23, type: trojan, server: 183.236.51.7, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本24, type: trojan, server: 183.236.51.7, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本25, type: trojan, server: 183.236.51.6, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本26, type: trojan, server: 183.236.51.6, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本27, type: trojan, server: 183.236.51.6, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本28, type: trojan, server: 183.236.51.6, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本29, type: trojan, server: 183.236.51.6, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本30, type: trojan, server: 183.236.51.6, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本31, type: trojan, server: 183.236.51.6, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本32, type: trojan, server: 183.236.51.6, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本33, type: trojan, server: 183.236.51.5, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本34, type: trojan, server: 183.236.51.5, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本35, type: trojan, server: 183.236.51.5, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本36, type: trojan, server: 183.236.51.5, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本37, type: trojan, server: 183.236.51.5, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本38, type: trojan, server: 183.236.51.5, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本39, type: trojan, server: 183.236.51.5, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本40, type: trojan, server: 183.236.51.5, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本41, type: trojan, server: 183.236.51.4, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本42, type: trojan, server: 183.236.51.4, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本43, type: trojan, server: 183.236.51.4, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本44, type: trojan, server: 183.236.51.4, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本45, type: trojan, server: 183.236.51.4, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本46, type: trojan, server: 183.236.51.4, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本47, type: trojan, server: 183.236.51.4, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本48, type: trojan, server: 183.236.51.4, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本49, type: trojan, server: 183.236.51.3, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本50, type: trojan, server: 183.236.51.3, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本51, type: trojan, server: 183.236.51.3, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本52, type: trojan, server: 183.236.51.3, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本53, type: trojan, server: 183.236.51.3, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本54, type: trojan, server: 183.236.51.3, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本55, type: trojan, server: 183.236.51.3, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本56, type: trojan, server: 183.236.51.3, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本57, type: trojan, server: 183.236.51.2, port: 10818, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本58, type: trojan, server: 183.236.51.2, port: 10817, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本59, type: trojan, server: 183.236.51.2, port: 10816, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本60, type: trojan, server: 183.236.51.2, port: 10815, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本61, type: trojan, server: 183.236.51.2, port: 10814, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本62, type: trojan, server: 183.236.51.2, port: 10813, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本63, type: trojan, server: 183.236.51.2, port: 10812, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: JP日本64, type: trojan, server: 183.236.51.2, port: 10811, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡1, type: trojan, server: 183.236.51.9, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡2, type: trojan, server: 183.236.51.9, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡3, type: trojan, server: 183.236.51.9, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡4, type: trojan, server: 183.236.51.9, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡5, type: trojan, server: 183.236.51.9, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡6, type: trojan, server: 183.236.51.9, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡7, type: trojan, server: 183.236.51.9, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡8, type: trojan, server: 183.236.51.9, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡9, type: trojan, server: 183.236.51.8, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡10, type: trojan, server: 183.236.51.8, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡11, type: trojan, server: 183.236.51.8, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡12, type: trojan, server: 183.236.51.8, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡13, type: trojan, server: 183.236.51.8, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡14, type: trojan, server: 183.236.51.8, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡15, type: trojan, server: 183.236.51.8, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡16, type: trojan, server: 183.236.51.8, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡17, type: trojan, server: 183.236.51.7, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡18, type: trojan, server: 183.236.51.7, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡19, type: trojan, server: 183.236.51.7, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡20, type: trojan, server: 183.236.51.7, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡21, type: trojan, server: 183.236.51.7, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡22, type: trojan, server: 183.236.51.7, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡23, type: trojan, server: 183.236.51.7, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡24, type: trojan, server: 183.236.51.7, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡25, type: trojan, server: 183.236.51.6, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡26, type: trojan, server: 183.236.51.6, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡27, type: trojan, server: 183.236.51.6, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡28, type: trojan, server: 183.236.51.6, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡29, type: trojan, server: 183.236.51.6, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡30, type: trojan, server: 183.236.51.6, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡31, type: trojan, server: 183.236.51.6, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡32, type: trojan, server: 183.236.51.6, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡33, type: trojan, server: 183.236.51.5, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡34, type: trojan, server: 183.236.51.5, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡35, type: trojan, server: 183.236.51.5, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡36, type: trojan, server: 183.236.51.5, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡37, type: trojan, server: 183.236.51.5, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡38, type: trojan, server: 183.236.51.5, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡39, type: trojan, server: 183.236.51.5, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡40, type: trojan, server: 183.236.51.5, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡41, type: trojan, server: 183.236.51.4, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡42, type: trojan, server: 183.236.51.4, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡43, type: trojan, server: 183.236.51.4, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡44, type: trojan, server: 183.236.51.4, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡45, type: trojan, server: 183.236.51.4, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡46, type: trojan, server: 183.236.51.4, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡47, type: trojan, server: 183.236.51.4, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡48, type: trojan, server: 183.236.51.4, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡49, type: trojan, server: 183.236.51.3, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡50, type: trojan, server: 183.236.51.3, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡51, type: trojan, server: 183.236.51.3, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡52, type: trojan, server: 183.236.51.3, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡53, type: trojan, server: 183.236.51.3, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡54, type: trojan, server: 183.236.51.3, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡55, type: trojan, server: 183.236.51.3, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡56, type: trojan, server: 183.236.51.3, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡57, type: trojan, server: 183.236.51.2, port: 10834, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡58, type: trojan, server: 183.236.51.2, port: 10833, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡59, type: trojan, server: 183.236.51.2, port: 10832, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡60, type: trojan, server: 183.236.51.2, port: 10831, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡61, type: trojan, server: 183.236.51.2, port: 10830, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡62, type: trojan, server: 183.236.51.2, port: 10829, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡63, type: trojan, server: 183.236.51.2, port: 10828, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: SG新加坡64, type: trojan, server: 183.236.51.2, port: 10827, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利1, type: trojan, server: 183.236.51.9, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利2, type: trojan, server: 183.236.51.8, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利3, type: trojan, server: 183.236.51.7, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利4, type: trojan, server: 183.236.51.6, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利5, type: trojan, server: 183.236.51.5, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利6, type: trojan, server: 183.236.51.4, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利7, type: trojan, server: 183.236.51.3, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IT意大利8, type: trojan, server: 183.236.51.2, port: 10849, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国1, type: trojan, server: 183.236.51.9, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国2, type: trojan, server: 183.236.51.8, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国3, type: trojan, server: 183.236.51.7, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国4, type: trojan, server: 183.236.51.6, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国5, type: trojan, server: 183.236.51.5, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国6, type: trojan, server: 183.236.51.4, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国7, type: trojan, server: 183.236.51.3, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: DE德国8, type: trojan, server: 183.236.51.2, port: 10839, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利1, type: trojan, server: 183.236.51.9, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利2, type: trojan, server: 183.236.51.8, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利3, type: trojan, server: 183.236.51.7, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利4, type: trojan, server: 183.236.51.6, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利5, type: trojan, server: 183.236.51.5, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利6, type: trojan, server: 183.236.51.4, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利7, type: trojan, server: 183.236.51.3, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: AT奥地利8, type: trojan, server: 183.236.51.2, port: 10848, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾1, type: trojan, server: 183.236.51.9, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾2, type: trojan, server: 183.236.51.8, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾3, type: trojan, server: 183.236.51.7, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾4, type: trojan, server: 183.236.51.6, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾5, type: trojan, server: 183.236.51.5, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾6, type: trojan, server: 183.236.51.4, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾7, type: trojan, server: 183.236.51.3, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: TW台湾8, type: trojan, server: 183.236.51.2, port: 10835, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度1, type: trojan, server: 183.236.51.9, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度2, type: trojan, server: 183.236.51.8, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度3, type: trojan, server: 183.236.51.7, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度4, type: trojan, server: 183.236.51.6, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度5, type: trojan, server: 183.236.51.5, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度6, type: trojan, server: 183.236.51.4, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度7, type: trojan, server: 183.236.51.3, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: IN印度8, type: trojan, server: 183.236.51.2, port: 10840, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯1, type: trojan, server: 183.236.51.9, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯2, type: trojan, server: 183.236.51.8, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯3, type: trojan, server: 183.236.51.7, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯4, type: trojan, server: 183.236.51.6, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯5, type: trojan, server: 183.236.51.5, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯6, type: trojan, server: 183.236.51.4, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯7, type: trojan, server: 183.236.51.3, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: RU俄罗斯8, type: trojan, server: 183.236.51.2, port: 10844, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰1, type: trojan, server: 183.236.51.9, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰2, type: trojan, server: 183.236.51.8, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰3, type: trojan, server: 183.236.51.7, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰4, type: trojan, server: 183.236.51.6, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰5, type: trojan, server: 183.236.51.5, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰6, type: trojan, server: 183.236.51.4, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰7, type: trojan, server: 183.236.51.3, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+    - { name: UA乌克兰8, type: trojan, server: 183.236.51.2, port: 10845, password: 9e4806bd-62d1-49bf-b745-052e1156466e, udp: true, skip-cert-verify: true }
+
+proxy-groups:
+    - { name: ❤️vpnhat❤️, type: select, proxies: [自动选择, 故障转移, HK香港1, HK香港2, HK香港3, HK香港4, HK香港5, HK香港6, HK香港7, HK香港8, HK香港9, HK香港10, HK香港11, HK香港12, HK香港13, HK香港14, HK香港15, HK香港16, HK香港17, HK香港18, HK香港19, HK香港20, HK香港21, HK香港22, HK香港23, HK香港24, HK香港25, HK香港26, HK香港27, HK香港28, HK香港29, HK香港30, HK香港31, HK香港32, HK香港33, HK香港34, HK香港35, HK香港36, HK香港37, HK香港38, HK香港39, HK香港40, HK香港41, HK香港42, HK香港43, HK香港44, HK香港45, HK香港46, HK香港47, HK香港48, HK香港49, HK香港50, HK香港51, HK香港52, HK香港53, HK香港54, HK香港55, HK香港56, HK香港57, HK香港58, HK香港59, HK香港60, HK香港61, HK香港62, HK香港63, HK香港64, HK香港65, HK香港66, HK香港67, HK香港68, HK香港69, HK香港70, HK香港71, HK香港72, HK香港73, HK香港74, HK香港75, HK香港76, HK香港77, HK香港78, HK香港79, HK香港80, KR韩国1, KR韩国2, KR韩国3, KR韩国4, KR韩国5, KR韩国6, KR韩国7, KR韩国8, AR阿根廷1, AR阿根廷2, AR阿根廷3, AR阿根廷4, AR阿根廷5, AR阿根廷6, AR阿根廷7, AR阿根廷8, AE迪拜1, AE迪拜2, AE迪拜3, AE迪拜4, AE迪拜5, AE迪拜6, AE迪拜7, AE迪拜8, GB英国1, GB英国2, GB英国3, GB英国4, GB英国5, GB英国6, GB英国7, GB英国8, US美国01, US美国02, US美国03, US美国04, US美国05, US美国06, US美国07, US美国08, US美国09, US美国10, US美国11, US美国12, US美国13, US美国14, US美国15, US美国16, US美国17, US美国18, US美国19, US美国20, US美国21, US美国22, US美国23, US美国24, US美国25, US美国26, US美国27, US美国28, US美国29, US美国30, US美国31, US美国32, US美国33, US美国34, US美国35, US美国36, US美国37, US美国38, US美国39, US美国40, US美国41, US美国42, US美国43, US美国44, US美国45, US美国46, US美国47, US美国48, US美国49, US美国50, US美国51, US美国52, US美国53, US美国54, US美国55, US美国56, US美国57, US美国58, US美国59, US美国60, US美国61, US美国62, US美国63, US美国64, IE爱尔兰1, IE爱尔兰2, IE爱尔兰3, IE爱尔兰4, IE爱尔兰5, IE爱尔兰6, IE爱尔兰7, IE爱尔兰8, FR法国1, FR法国2, FR法国3, FR法国4, FR法国5, FR法国6, FR法国7, FR法国8, JP日本1, JP日本2, JP日本3, JP日本4, JP日本5, JP日本6, JP日本7, JP日本8, JP日本9, JP日本10, JP日本11, JP日本12, JP日本13, JP日本14, JP日本15, JP日本16, JP日本17, JP日本18, JP日本19, JP日本20, JP日本21, JP日本22, JP日本23, JP日本24, JP日本25, JP日本26, JP日本27, JP日本28, JP日本29, JP日本30, JP日本31, JP日本32, JP日本33, JP日本34, JP日本35, JP日本36, JP日本37, JP日本38, JP日本39, JP日本40, JP日本41, JP日本42, JP日本43, JP日本44, JP日本45, JP日本46, JP日本47, JP日本48, JP日本49, JP日本50, JP日本51, JP日本52, JP日本53, JP日本54, JP日本55, JP日本56, JP日本57, JP日本58, JP日本59, JP日本60, JP日本61, JP日本62, JP日本63, JP日本64, SG新加坡1, SG新加坡2, SG新加坡3, SG新加坡4, SG新加坡5, SG新加坡6, SG新加坡7, SG新加坡8, SG新加坡9, SG新加坡10, SG新加坡11, SG新加坡12, SG新加坡13, SG新加坡14, SG新加坡15, SG新加坡16, SG新加坡17, SG新加坡18, SG新加坡19, SG新加坡20, SG新加坡21, SG新加坡22, SG新加坡23, SG新加坡24, SG新加坡25, SG新加坡26, SG新加坡27, SG新加坡28, SG新加坡29, SG新加坡30, SG新加坡31, SG新加坡32, SG新加坡33, SG新加坡34, SG新加坡35, SG新加坡36, SG新加坡37, SG新加坡38, SG新加坡39, SG新加坡40, SG新加坡41, SG新加坡42, SG新加坡43, SG新加坡44, SG新加坡45, SG新加坡46, SG新加坡47, SG新加坡48, SG新加坡49, SG新加坡50, SG新加坡51, SG新加坡52, SG新加坡53, SG新加坡54, SG新加坡55, SG新加坡56, SG新加坡57, SG新加坡58, SG新加坡59, SG新加坡60, SG新加坡61, SG新加坡62, SG新加坡63, SG新加坡64, IT意大利1, IT意大利2, IT意大利3, IT意大利4, IT意大利5, IT意大利6, IT意大利7, IT意大利8, DE德国1, DE德国2, DE德国3, DE德国4, DE德国5, DE德国6, DE德国7, DE德国8, AT奥地利1, AT奥地利2, AT奥地利3, AT奥地利4, AT奥地利5, AT奥地利6, AT奥地利7, AT奥地利8, TW台湾1, TW台湾2, TW台湾3, TW台湾4, TW台湾5, TW台湾6, TW台湾7, TW台湾8, IN印度1, IN印度2, IN印度3, IN印度4, IN印度5, IN印度6, IN印度7, IN印度8, RU俄罗斯1, RU俄罗斯2, RU俄罗斯3, RU俄罗斯4, RU俄罗斯5, RU俄罗斯6, RU俄罗斯7, RU俄罗斯8, UA乌克兰1, UA乌克兰2, UA乌克兰3, UA乌克兰4, UA乌克兰5, UA乌克兰6, UA乌克兰7, UA乌克兰8] }
+    - { name: 自动选择, type: url-test, proxies: [HK香港1, HK香港2, HK香港3, HK香港4, HK香港5, HK香港6, HK香港7, HK香港8, HK香港9, HK香港10, HK香港11, HK香港12, HK香港13, HK香港14, HK香港15, HK香港16, HK香港17, HK香港18, HK香港19, HK香港20, HK香港21, HK香港22, HK香港23, HK香港24, HK香港25, HK香港26, HK香港27, HK香港28, HK香港29, HK香港30, HK香港31, HK香港32, HK香港33, HK香港34, HK香港35, HK香港36, HK香港37, HK香港38, HK香港39, HK香港40, HK香港41, HK香港42, HK香港43, HK香港44, HK香港45, HK香港46, HK香港47, HK香港48, HK香港49, HK香港50, HK香港51, HK香港52, HK香港53, HK香港54, HK香港55, HK香港56, HK香港57, HK香港58, HK香港59, HK香港60, HK香港61, HK香港62, HK香港63, HK香港64, HK香港65, HK香港66, HK香港67, HK香港68, HK香港69, HK香港70, HK香港71, HK香港72, HK香港73, HK香港74, HK香港75, HK香港76, HK香港77, HK香港78, HK香港79, HK香港80, KR韩国1, KR韩国2, KR韩国3, KR韩国4, KR韩国5, KR韩国6, KR韩国7, KR韩国8, AR阿根廷1, AR阿根廷2, AR阿根廷3, AR阿根廷4, AR阿根廷5, AR阿根廷6, AR阿根廷7, AR阿根廷8, AE迪拜1, AE迪拜2, AE迪拜3, AE迪拜4, AE迪拜5, AE迪拜6, AE迪拜7, AE迪拜8, GB英国1, GB英国2, GB英国3, GB英国4, GB英国5, GB英国6, GB英国7, GB英国8, US美国01, US美国02, US美国03, US美国04, US美国05, US美国06, US美国07, US美国08, US美国09, US美国10, US美国11, US美国12, US美国13, US美国14, US美国15, US美国16, US美国17, US美国18, US美国19, US美国20, US美国21, US美国22, US美国23, US美国24, US美国25, US美国26, US美国27, US美国28, US美国29, US美国30, US美国31, US美国32, US美国33, US美国34, US美国35, US美国36, US美国37, US美国38, US美国39, US美国40, US美国41, US美国42, US美国43, US美国44, US美国45, US美国46, US美国47, US美国48, US美国49, US美国50, US美国51, US美国52, US美国53, US美国54, US美国55, US美国56, US美国57, US美国58, US美国59, US美国60, US美国61, US美国62, US美国63, US美国64, IE爱尔兰1, IE爱尔兰2, IE爱尔兰3, IE爱尔兰4, IE爱尔兰5, IE爱尔兰6, IE爱尔兰7, IE爱尔兰8, FR法国1, FR法国2, FR法国3, FR法国4, FR法国5, FR法国6, FR法国7, FR法国8, JP日本1, JP日本2, JP日本3, JP日本4, JP日本5, JP日本6, JP日本7, JP日本8, JP日本9, JP日本10, JP日本11, JP日本12, JP日本13, JP日本14, JP日本15, JP日本16, JP日本17, JP日本18, JP日本19, JP日本20, JP日本21, JP日本22, JP日本23, JP日本24, JP日本25, JP日本26, JP日本27, JP日本28, JP日本29, JP日本30, JP日本31, JP日本32, JP日本33, JP日本34, JP日本35, JP日本36, JP日本37, JP日本38, JP日本39, JP日本40, JP日本41, JP日本42, JP日本43, JP日本44, JP日本45, JP日本46, JP日本47, JP日本48, JP日本49, JP日本50, JP日本51, JP日本52, JP日本53, JP日本54, JP日本55, JP日本56, JP日本57, JP日本58, JP日本59, JP日本60, JP日本61, JP日本62, JP日本63, JP日本64, SG新加坡1, SG新加坡2, SG新加坡3, SG新加坡4, SG新加坡5, SG新加坡6, SG新加坡7, SG新加坡8, SG新加坡9, SG新加坡10, SG新加坡11, SG新加坡12, SG新加坡13, SG新加坡14, SG新加坡15, SG新加坡16, SG新加坡17, SG新加坡18, SG新加坡19, SG新加坡20, SG新加坡21, SG新加坡22, SG新加坡23, SG新加坡24, SG新加坡25, SG新加坡26, SG新加坡27, SG新加坡28, SG新加坡29, SG新加坡30, SG新加坡31, SG新加坡32, SG新加坡33, SG新加坡34, SG新加坡35, SG新加坡36, SG新加坡37, SG新加坡38, SG新加坡39, SG新加坡40, SG新加坡41, SG新加坡42, SG新加坡43, SG新加坡44, SG新加坡45, SG新加坡46, SG新加坡47, SG新加坡48, SG新加坡49, SG新加坡50, SG新加坡51, SG新加坡52, SG新加坡53, SG新加坡54, SG新加坡55, SG新加坡56, SG新加坡57, SG新加坡58, SG新加坡59, SG新加坡60, SG新加坡61, SG新加坡62, SG新加坡63, SG新加坡64, IT意大利1, IT意大利2, IT意大利3, IT意大利4, IT意大利5, IT意大利6, IT意大利7, IT意大利8, DE德国1, DE德国2, DE德国3, DE德国4, DE德国5, DE德国6, DE德国7, DE德国8, AT奥地利1, AT奥地利2, AT奥地利3, AT奥地利4, AT奥地利5, AT奥地利6, AT奥地利7, AT奥地利8, TW台湾1, TW台湾2, TW台湾3, TW台湾4, TW台湾5, TW台湾6, TW台湾7, TW台湾8, IN印度1, IN印度2, IN印度3, IN印度4, IN印度5, IN印度6, IN印度7, IN印度8, RU俄罗斯1, RU俄罗斯2, RU俄罗斯3, RU俄罗斯4, RU俄罗斯5, RU俄罗斯6, RU俄罗斯7, RU俄罗斯8, UA乌克兰1, UA乌克兰2, UA乌克兰3, UA乌克兰4, UA乌克兰5, UA乌克兰6, UA乌克兰7, UA乌克兰8], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: [HK香港1, HK香港2, HK香港3, HK香港4, HK香港5, HK香港6, HK香港7, HK香港8, HK香港9, HK香港10, HK香港11, HK香港12, HK香港13, HK香港14, HK香港15, HK香港16, HK香港17, HK香港18, HK香港19, HK香港20, HK香港21, HK香港22, HK香港23, HK香港24, HK香港25, HK香港26, HK香港27, HK香港28, HK香港29, HK香港30, HK香港31, HK香港32, HK香港33, HK香港34, HK香港35, HK香港36, HK香港37, HK香港38, HK香港39, HK香港40, HK香港41, HK香港42, HK香港43, HK香港44, HK香港45, HK香港46, HK香港47, HK香港48, HK香港49, HK香港50, HK香港51, HK香港52, HK香港53, HK香港54, HK香港55, HK香港56, HK香港57, HK香港58, HK香港59, HK香港60, HK香港61, HK香港62, HK香港63, HK香港64, HK香港65, HK香港66, HK香港67, HK香港68, HK香港69, HK香港70, HK香港71, HK香港72, HK香港73, HK香港74, HK香港75, HK香港76, HK香港77, HK香港78, HK香港79, HK香港80, KR韩国1, KR韩国2, KR韩国3, KR韩国4, KR韩国5, KR韩国6, KR韩国7, KR韩国8, AR阿根廷1, AR阿根廷2, AR阿根廷3, AR阿根廷4, AR阿根廷5, AR阿根廷6, AR阿根廷7, AR阿根廷8, AE迪拜1, AE迪拜2, AE迪拜3, AE迪拜4, AE迪拜5, AE迪拜6, AE迪拜7, AE迪拜8, GB英国1, GB英国2, GB英国3, GB英国4, GB英国5, GB英国6, GB英国7, GB英国8, US美国01, US美国02, US美国03, US美国04, US美国05, US美国06, US美国07, US美国08, US美国09, US美国10, US美国11, US美国12, US美国13, US美国14, US美国15, US美国16, US美国17, US美国18, US美国19, US美国20, US美国21, US美国22, US美国23, US美国24, US美国25, US美国26, US美国27, US美国28, US美国29, US美国30, US美国31, US美国32, US美国33, US美国34, US美国35, US美国36, US美国37, US美国38, US美国39, US美国40, US美国41, US美国42, US美国43, US美国44, US美国45, US美国46, US美国47, US美国48, US美国49, US美国50, US美国51, US美国52, US美国53, US美国54, US美国55, US美国56, US美国57, US美国58, US美国59, US美国60, US美国61, US美国62, US美国63, US美国64, IE爱尔兰1, IE爱尔兰2, IE爱尔兰3, IE爱尔兰4, IE爱尔兰5, IE爱尔兰6, IE爱尔兰7, IE爱尔兰8, FR法国1, FR法国2, FR法国3, FR法国4, FR法国5, FR法国6, FR法国7, FR法国8, JP日本1, JP日本2, JP日本3, JP日本4, JP日本5, JP日本6, JP日本7, JP日本8, JP日本9, JP日本10, JP日本11, JP日本12, JP日本13, JP日本14, JP日本15, JP日本16, JP日本17, JP日本18, JP日本19, JP日本20, JP日本21, JP日本22, JP日本23, JP日本24, JP日本25, JP日本26, JP日本27, JP日本28, JP日本29, JP日本30, JP日本31, JP日本32, JP日本33, JP日本34, JP日本35, JP日本36, JP日本37, JP日本38, JP日本39, JP日本40, JP日本41, JP日本42, JP日本43, JP日本44, JP日本45, JP日本46, JP日本47, JP日本48, JP日本49, JP日本50, JP日本51, JP日本52, JP日本53, JP日本54, JP日本55, JP日本56, JP日本57, JP日本58, JP日本59, JP日本60, JP日本61, JP日本62, JP日本63, JP日本64, SG新加坡1, SG新加坡2, SG新加坡3, SG新加坡4, SG新加坡5, SG新加坡6, SG新加坡7, SG新加坡8, SG新加坡9, SG新加坡10, SG新加坡11, SG新加坡12, SG新加坡13, SG新加坡14, SG新加坡15, SG新加坡16, SG新加坡17, SG新加坡18, SG新加坡19, SG新加坡20, SG新加坡21, SG新加坡22, SG新加坡23, SG新加坡24, SG新加坡25, SG新加坡26, SG新加坡27, SG新加坡28, SG新加坡29, SG新加坡30, SG新加坡31, SG新加坡32, SG新加坡33, SG新加坡34, SG新加坡35, SG新加坡36, SG新加坡37, SG新加坡38, SG新加坡39, SG新加坡40, SG新加坡41, SG新加坡42, SG新加坡43, SG新加坡44, SG新加坡45, SG新加坡46, SG新加坡47, SG新加坡48, SG新加坡49, SG新加坡50, SG新加坡51, SG新加坡52, SG新加坡53, SG新加坡54, SG新加坡55, SG新加坡56, SG新加坡57, SG新加坡58, SG新加坡59, SG新加坡60, SG新加坡61, SG新加坡62, SG新加坡63, SG新加坡64, IT意大利1, IT意大利2, IT意大利3, IT意大利4, IT意大利5, IT意大利6, IT意大利7, IT意大利8, DE德国1, DE德国2, DE德国3, DE德国4, DE德国5, DE德国6, DE德国7, DE德国8, AT奥地利1, AT奥地利2, AT奥地利3, AT奥地利4, AT奥地利5, AT奥地利6, AT奥地利7, AT奥地利8, TW台湾1, TW台湾2, TW台湾3, TW台湾4, TW台湾5, TW台湾6, TW台湾7, TW台湾8, IN印度1, IN印度2, IN印度3, IN印度4, IN印度5, IN印度6, IN印度7, IN印度8, RU俄罗斯1, RU俄罗斯2, RU俄罗斯3, RU俄罗斯4, RU俄罗斯5, RU俄罗斯6, RU俄罗斯7, RU俄罗斯8, UA乌克兰1, UA乌克兰2, UA乌克兰3, UA乌克兰4, UA乌克兰5, UA乌克兰6, UA乌克兰7, UA乌克兰8], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+rules:
+    - 'DOMAIN-SUFFIX,services.googleapis.cn,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,❤️vpnhat❤️'
+    - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
+    - 'DOMAIN,safebrowsing.googleapis.com,DIRECT'
+    - 'DOMAIN,developer.apple.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,digicert.com,❤️vpnhat❤️'
+    - 'DOMAIN,ocsp.apple.com,❤️vpnhat❤️'
+    - 'DOMAIN,ocsp.comodoca.com,❤️vpnhat❤️'
+    - 'DOMAIN,ocsp.usertrust.com,❤️vpnhat❤️'
+    - 'DOMAIN,ocsp.sectigo.com,❤️vpnhat❤️'
+    - 'DOMAIN,ocsp.verisign.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,apple-dns.net,❤️vpnhat❤️'
+    - 'DOMAIN,testflight.apple.com,❤️vpnhat❤️'
+    - 'DOMAIN,sandbox.itunes.apple.com,❤️vpnhat❤️'
+    - 'DOMAIN,itunes.apple.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,apps.apple.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,blobstore.apple.com,❤️vpnhat❤️'
+    - 'DOMAIN,cvws.icloud-content.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,mzstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,itunes.apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,icloud-content.com,DIRECT'
+    - 'DOMAIN-SUFFIX,me.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aaplimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn20.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cdn-apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,akadns.net,DIRECT'
+    - 'DOMAIN-SUFFIX,akamaiedge.net,DIRECT'
+    - 'DOMAIN-SUFFIX,edgekey.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mwcname.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,apple-mapkit.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.com,DIRECT'
+    - 'DOMAIN-SUFFIX,126.net,DIRECT'
+    - 'DOMAIN-SUFFIX,127.net,DIRECT'
+    - 'DOMAIN-SUFFIX,163.com,DIRECT'
+    - 'DOMAIN-SUFFIX,360buyimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,36kr.com,DIRECT'
+    - 'DOMAIN-SUFFIX,acfun.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,air-matters.com,DIRECT'
+    - 'DOMAIN-SUFFIX,aixifan.com,DIRECT'
+    - 'DOMAIN-KEYWORD,alicdn,DIRECT'
+    - 'DOMAIN-KEYWORD,alipay,DIRECT'
+    - 'DOMAIN-KEYWORD,taobao,DIRECT'
+    - 'DOMAIN-SUFFIX,amap.com,DIRECT'
+    - 'DOMAIN-SUFFIX,autonavi.com,DIRECT'
+    - 'DOMAIN-KEYWORD,baidu,DIRECT'
+    - 'DOMAIN-SUFFIX,bdimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bdstatic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilibili.com,DIRECT'
+    - 'DOMAIN-SUFFIX,bilivideo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,caiyunapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,clouddn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbeta.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cnbetacdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,cootekservice.com,DIRECT'
+    - 'DOMAIN-SUFFIX,csdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ctrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dgtle.com,DIRECT'
+    - 'DOMAIN-SUFFIX,dianping.com,DIRECT'
+    - 'DOMAIN-SUFFIX,douban.com,DIRECT'
+    - 'DOMAIN-SUFFIX,doubanio.com,DIRECT'
+    - 'DOMAIN-SUFFIX,duokan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,easou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ele.me,DIRECT'
+    - 'DOMAIN-SUFFIX,feng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,fir.im,DIRECT'
+    - 'DOMAIN-SUFFIX,frdic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,g-cores.com,DIRECT'
+    - 'DOMAIN-SUFFIX,godic.net,DIRECT'
+    - 'DOMAIN-SUFFIX,gtimg.com,DIRECT'
+    - 'DOMAIN,cdn.hockeyapp.net,DIRECT'
+    - 'DOMAIN-SUFFIX,hongxiu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,hxcdn.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iciba.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifeng.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ifengimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ipip.net,DIRECT'
+    - 'DOMAIN-SUFFIX,iqiyi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,jianshu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,knewone.com,DIRECT'
+    - 'DOMAIN-SUFFIX,le.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lecloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,lemicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,licdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,luoo.net,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.com,DIRECT'
+    - 'DOMAIN-SUFFIX,meituan.net,DIRECT'
+    - 'DOMAIN-SUFFIX,mi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miaopai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoft.com,DIRECT'
+    - 'DOMAIN-SUFFIX,microsoftonline.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miui.com,DIRECT'
+    - 'DOMAIN-SUFFIX,miwifi.com,DIRECT'
+    - 'DOMAIN-SUFFIX,mob.com,DIRECT'
+    - 'DOMAIN-SUFFIX,netease.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office.com,DIRECT'
+    - 'DOMAIN-SUFFIX,office365.com,DIRECT'
+    - 'DOMAIN-KEYWORD,officecdn,DIRECT'
+    - 'DOMAIN-SUFFIX,oschina.net,DIRECT'
+    - 'DOMAIN-SUFFIX,ppsimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,pstatp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qcloud.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdaily.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qdmm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qhres.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qidian.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qihucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiniucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qiyipic.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qq.com,DIRECT'
+    - 'DOMAIN-SUFFIX,qqurl.com,DIRECT'
+    - 'DOMAIN-SUFFIX,rarbg.to,DIRECT'
+    - 'DOMAIN-SUFFIX,ruguoapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,segmentfault.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sinaapp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,smzdm.com,DIRECT'
+    - 'DOMAIN-SUFFIX,snapdrop.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sogou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sogoucdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,sohu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,soku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,speedtest.net,DIRECT'
+    - 'DOMAIN-SUFFIX,sspai.com,DIRECT'
+    - 'DOMAIN-SUFFIX,suning.com,DIRECT'
+    - 'DOMAIN-SUFFIX,taobao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tencent.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tenpay.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tianyancha.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tmall.com,DIRECT'
+    - 'DOMAIN-SUFFIX,tudou.com,DIRECT'
+    - 'DOMAIN-SUFFIX,umetrip.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upaiyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,upyun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,veryzhun.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weather.com,DIRECT'
+    - 'DOMAIN-SUFFIX,weibo.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xiami.net,DIRECT'
+    - 'DOMAIN-SUFFIX,xiaomicp.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ximalaya.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xmcdn.com,DIRECT'
+    - 'DOMAIN-SUFFIX,xunlei.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yhd.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yihaodianimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,yinxiang.com,DIRECT'
+    - 'DOMAIN-SUFFIX,ykimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youdao.com,DIRECT'
+    - 'DOMAIN-SUFFIX,youku.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zealer.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhihu.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zhimg.com,DIRECT'
+    - 'DOMAIN-SUFFIX,zimuzu.tv,DIRECT'
+    - 'DOMAIN-SUFFIX,zoho.com,DIRECT'
+    - 'DOMAIN-KEYWORD,amazon,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,google,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,gmail,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,youtube,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,facebook,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,fb.me,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,fbcdn.net,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,twitter,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,instagram,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,dropbox,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,twimg.com,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,blogspot,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,youtu.be,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,whatsapp,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,admarvel,REJECT'
+    - 'DOMAIN-KEYWORD,admaster,REJECT'
+    - 'DOMAIN-KEYWORD,adsage,REJECT'
+    - 'DOMAIN-KEYWORD,adsmogo,REJECT'
+    - 'DOMAIN-KEYWORD,adsrvmedia,REJECT'
+    - 'DOMAIN-KEYWORD,adwords,REJECT'
+    - 'DOMAIN-KEYWORD,adservice,REJECT'
+    - 'DOMAIN-SUFFIX,appsflyer.com,REJECT'
+    - 'DOMAIN-KEYWORD,domob,REJECT'
+    - 'DOMAIN-SUFFIX,doubleclick.net,REJECT'
+    - 'DOMAIN-KEYWORD,duomeng,REJECT'
+    - 'DOMAIN-KEYWORD,dwtrack,REJECT'
+    - 'DOMAIN-KEYWORD,guanggao,REJECT'
+    - 'DOMAIN-KEYWORD,lianmeng,REJECT'
+    - 'DOMAIN-SUFFIX,mmstat.com,REJECT'
+    - 'DOMAIN-KEYWORD,mopub,REJECT'
+    - 'DOMAIN-KEYWORD,omgmta,REJECT'
+    - 'DOMAIN-KEYWORD,openx,REJECT'
+    - 'DOMAIN-KEYWORD,partnerad,REJECT'
+    - 'DOMAIN-KEYWORD,pingfore,REJECT'
+    - 'DOMAIN-KEYWORD,supersonicads,REJECT'
+    - 'DOMAIN-KEYWORD,uedas,REJECT'
+    - 'DOMAIN-KEYWORD,umeng,REJECT'
+    - 'DOMAIN-KEYWORD,usage,REJECT'
+    - 'DOMAIN-SUFFIX,vungle.com,REJECT'
+    - 'DOMAIN-KEYWORD,wlmonitor,REJECT'
+    - 'DOMAIN-KEYWORD,zjtoolbar,REJECT'
+    - 'DOMAIN-SUFFIX,9to5mac.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,abpchina.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,adblockplus.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,adobe.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,akamaized.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,alfredapp.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,amplitude.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ampproject.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,android.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,angularjs.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,aolcdn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,apkpure.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,appledaily.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,appshopper.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,appspot.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,arcgis.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,archive.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,armorgames.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,aspnetcdn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,att.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,awsstatic.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,azureedge.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,azurewebsites.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bing.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bintray.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bit.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bit.ly,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bitbucket.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bjango.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bkrtx.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,blog.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,blogcdn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,blogger.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,blogsmithmedia.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,blogspot.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,blogspot.hk,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,bloomberg.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,box.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,box.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cachefly.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,chromium.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cl.ly,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cloudflare.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cloudfront.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cloudmagic.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cmail19.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cnet.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,cocoapods.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,comodoca.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,crashlytics.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,culturedcode.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,d.pr,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,danilo.to,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,dayone.me,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,db.tt,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,deskconnect.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,disq.us,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,disqus.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,disquscdn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,dnsimple.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,docker.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,dribbble.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,droplr.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,duckduckgo.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,dueapp.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,dytt8.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,edgecastcdn.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,edgekey.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,edgesuite.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,engadget.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,entrust.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,eurekavpt.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,evernote.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,fabric.io,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,fast.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,fastly.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,fc2.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,feedburner.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,feedly.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,feedsportal.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,fiftythree.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,firebaseio.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,flexibits.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,flickr.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,flipboard.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,g.co,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,gabia.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,geni.us,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,gfx.ms,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ggpht.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ghostnoteapp.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,git.io,❤️vpnhat❤️'
+    - 'DOMAIN-KEYWORD,github,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,globalsign.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,gmodules.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,godaddy.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,golang.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,gongm.in,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,goo.gl,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,goodreaders.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,goodreads.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,gravatar.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,gstatic.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,gvt0.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,hockeyapp.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,hotmail.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,icons8.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ifixit.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ift.tt,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ifttt.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,iherb.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,imageshack.us,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,img.ly,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,imgur.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,imore.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,instapaper.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ipn.li,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,is.gd,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,issuu.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,itgonglun.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,itun.es,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ixquick.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,j.mp,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,js.revsci.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,jshint.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,jtvnw.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,justgetflux.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,kat.cr,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,klip.me,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,libsyn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,linkedin.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,line-apps.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,linode.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,lithium.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,littlehj.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,live.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,live.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,livefilestore.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,llnwd.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,macid.co,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,macromedia.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,macrumors.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,mashable.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,mathjax.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,medium.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,mega.co.nz,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,mega.nz,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,megaupload.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,microsofttranslator.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,mindnode.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,mobile01.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,modmyi.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,msedge.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,myfontastic.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,name.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,nextmedia.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,nsstatic.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,nssurge.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,nyt.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,nytimes.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,omnigroup.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,onedrive.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,onenote.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ooyala.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,openvpn.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,openwrt.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,orkut.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,osxdaily.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,outlook.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ow.ly,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,paddleapi.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,parallels.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,parse.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,pdfexpert.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,periscope.tv,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,pinboard.in,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,pinterest.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,pixelmator.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,pixiv.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,playpcesor.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,playstation.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,playstation.com.hk,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,playstation.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,playstationnetwork.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,pushwoosh.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,rime.im,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,servebom.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,sfx.ms,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,shadowsocks.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,sharethis.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,shazam.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,skype.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,smartdns❤️vpnhat❤️.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,smartmailcloud.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,sndcdn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,sony.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,soundcloud.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,sourceforge.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,spotify.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,squarespace.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,sstatic.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,st.luluku.pw,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,stackoverflow.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,startpage.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,staticflickr.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,steamcommunity.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,symauth.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,symcb.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,symcd.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tapbots.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tapbots.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tdesktop.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,techcrunch.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,techsmith.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,thepiratebay.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,theverge.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,time.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,timeinc.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tiny.cc,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tinypic.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tmblr.co,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,todoist.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,trello.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,trustasiassl.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tumblr.co,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tumblr.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tweetdeck.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,tweetmarker.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,twitch.tv,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,txmblr.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,typekit.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ubertags.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ublock.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ubnt.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ulyssesapp.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,urchin.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,usertrust.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,v.gd,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,v2ex.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,vimeo.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,vimeocdn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,vine.co,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,vivaldi.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,vox-cdn.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,vsco.co,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,vultr.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,w.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,w3schools.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,webtype.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wikiwand.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wikileaks.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wikimedia.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wikipedia.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wikipedia.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,windows.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,windows.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wire.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wordpress.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,workflowy.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wp.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wsj.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,wsj.net,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,xda-developers.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,xeeno.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,xiti.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,yahoo.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,yimg.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ying.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,yoyo.org,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,ytimg.com,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,telegra.ph,❤️vpnhat❤️'
+    - 'DOMAIN-SUFFIX,telegram.org,❤️vpnhat❤️'
+    - 'IP-CIDR,91.108.4.0/22,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,91.108.8.0/21,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,91.108.16.0/22,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,91.108.56.0/22,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,149.154.160.0/20,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR6,2001:67c:4e8::/48,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23d::/48,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR6,2001:b28:f23f::/48,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,120.232.181.162/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,120.241.147.226/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,120.253.253.226/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,120.253.255.162/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,120.253.255.34/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,120.253.255.98/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,180.163.150.162/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,180.163.150.34/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,180.163.151.162/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,180.163.151.34/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,203.208.39.0/24,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,203.208.40.0/24,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,203.208.41.0/24,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,203.208.43.0/24,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,203.208.50.0/24,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,220.181.174.162/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,220.181.174.226/32,❤️vpnhat❤️,no-resolve'
+    - 'IP-CIDR,220.181.174.34/32,❤️vpnhat❤️,no-resolve'
+    - 'DOMAIN,injections.adguard.org,DIRECT'
+    - 'DOMAIN,local.adguard.org,DIRECT'
+    - 'DOMAIN-SUFFIX,local,DIRECT'
+    - 'IP-CIDR,127.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,17.0.0.0/8,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR,224.0.0.0/4,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'DOMAIN-SUFFIX,cn,DIRECT'
+    - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'GEOIP,CN,DIRECT'
+    - 'MATCH,❤️vpnhat❤️'
