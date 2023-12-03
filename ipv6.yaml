@@ -24,7 +24,7 @@ proxies:
   - {"name":"hysteria2_1","type":"hysteria2","server":"108.181.22.155","port":22086,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_3","type":"hysteria2","server":"108.181.22.155","port":22086,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   
-  proxy-groups:
+proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
