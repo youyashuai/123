@@ -1,0 +1,75 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: "@vpnhat", server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: "@EXM3U", server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国1-解锁, server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国2-解锁, server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}, udp: true}
+  - {name: 美国3, server: 23.227.38.35, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国 IPv6 自定义免流host, server: bpus8.mybestjj.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bpus8.mybestjj.com}}, udp: true}
+  - {name: 日本, server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp3.889611.com}}, udp: true}
+  - {name: 加拿大, server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}, udp: true}
+  - {name: 俄罗斯, server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: 土耳其 Netflix中字, server: 23.227.38.33, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tr3.889611.com}}, udp: true}
+  - {name: 俄罗斯 IPv6, server: bper8.visaapp.top, port: 51753, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: 3091067b-9bce-4e1f-9f77-a41daff54268, tfo: false, udp: true}
+  - {name: 香港, server: hk3.visaapp.top, port: 49487, client-fingerprint: chrome, type: trojan, password: 3091067b-9bce-4e1f-9f77-a41daff54268, sni: ppp.bestcloud.tk, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 Youtube, server: 45.144.2.113, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.apple.com}}, udp: true}
+  - {name: 新加坡-会员节点, server: h81.bestcloud.tk, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1654431, headers: {Host: us4.mybestjj.com}}, udp: true}
+  - {name: 日本-会员节点, server: h82.bestcloud.tk, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1654431, headers: {Host: us4.mybestjj.com}}, udp: true}
+  - {name: Youtube去广告1, server: 162.159.142.201, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: Youtube去广告2, server: 162.159.142.202, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: Youtube去广告3, server: 162.159.142.203, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: Youtube去广告4, server: 162.159.142.204, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: Youtube去广告5, server: 162.159.142.205, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}, udp: true}
+  - {name: Youtube去广告6, server: 162.159.142.206, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}, udp: true}
+  - {name: 土耳其, server: 162.159.200.1, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tr3.889611.com}}, udp: true}
+  - {name: 日本1, server: 162.159.142.239, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp3.889611.com}}, udp: true}
+  - {name: 英国1, server: 162.159.142.241, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk3.889611.com}}, udp: true}
+  - {name: 美国 IPv6, server: bpus3.mybestjj.com, port: 443, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: 1654431}, udp: true}
+  - {name: 美国光速1, server: 162.159.142.201, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国光速2, server: 162.159.142.202, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国光速3, server: 162.159.142.203, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国光速4, server: 162.159.142.204, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国光速5, server: 162.159.142.205, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
+  - {name: 美国光速6, server: 162.159.142.206, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3091067b-9bce-4e1f-9f77-a41daff54268, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}, udp: true}
+proxy-groups:
+  - name: 🔰 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - "@vpnhat"
+      - "@EXM3U"
+      - 美国1-解锁
+      - 美国2-解锁
+      - 美国3
+      - 美国 IPv6 自定义免流host
+      - 日本
+      - 加拿大
+      - 俄罗斯
+      - 土耳其 Netflix中字
+      - 俄罗斯 IPv6
+      - 香港
+      - 俄罗斯 Youtube
+      - 新加坡-会员节点
+      - 日本-会员节点
+      - Youtube去广告1
+      - Youtube去广告2
+      - Youtube去广告3
+      - Youtube去广告4
+      - Youtube去广告5
+      - Youtube去广告6
+      - 土耳其
+      - 日本1
+      - 英国1
+      - 美国 IPv6
+      - 美国光速1
+      - 美国光速2
+      - 美国光速3
+      - 美国光速4
+      - 美国光速5
+      - 美国光速6
