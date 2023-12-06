@@ -23,7 +23,8 @@ proxies:
   - {"name":"hysteria2_0","type":"hysteria2","server":"www.dtku46.xyz","port":53850,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_1","type":"hysteria2","server":"108.181.22.155","port":12881,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
   - {"name":"hysteria2_3","type":"hysteria2","server":"108.181.22.155","port":12881,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
- proxy-groups:
+ 
+proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
@@ -238,6 +239,7 @@ proxies:
       - hysteria2_0
       - hysteria2_1
       - hysteria2_3
+
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
