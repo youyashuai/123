@@ -27,6 +27,7 @@ proxies:
   - {"name":"vless_1","type":"vless","server":"www.baota.me","port":443,"uuid":"f5c180eb-fbce-49ac-9029-482eca9385c0","tls":true,"servername":"xray1.freeh1.xyz","flow":"","network":"ws","ws-opts":{"path":"/gzogws","headers":{"host":"xray1.freeh1.xyz"}},"client-fingerprint":"chrome"}
   - {"name":"vless_2","type":"vless","server":"dongtaiwang3.com","port":443,"uuid":"f5c180eb-fbce-49ac-9029-482eca9385c0","tls":true,"servername":"xray1.freeh1.xyz","flow":"","network":"ws","ws-opts":{"path":"/gzogws","headers":{"host":"xray1.freeh1.xyz"}},"client-fingerprint":"chrome"}
   - {"name":"vless_3","type":"vless","server":"cloudflare.cfgo.cc","port":443,"uuid":"f5c180eb-fbce-49ac-9029-482eca9385c0","tls":true,"servername":"xray1.freeh1.xyz","flow":"","network":"ws","ws-opts":{"path":"/gzogws","headers":{"host":"xray1.freeh1.xyz"}},"client-fingerprint":"chrome"}
+
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -274,6 +275,7 @@ proxy-groups:
       - vless_1
       - vless_2
       - vless_3
+
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
