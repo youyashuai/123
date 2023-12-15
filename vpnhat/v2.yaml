@@ -1,0 +1,1064 @@
+# HTTP 代理端口
+port: 7890 
+
+# SOCKS5 代理端口
+socks-port: 7891 
+
+# Linux 和 macOS 的 redir 代理端口
+redir-port: 7892 
+
+# 允许局域网的连接
+allow-lan: true
+
+# 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
+mode: Rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+log-level: silent
+# Clash 的 RESTful API
+external-controller: '0.0.0.0:9090'
+
+# RESTful API 的口令
+secret: '' 
+
+# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
+# 参数应填写配置目录的相对路径或绝对路径。
+# external-ui: folder
+
+
+proxies:
+  - {"name":"IEPL-A-香港-HK01 ","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":30888,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-A-香港-HK02 ","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":30889,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-A-香港-HK03","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":30894,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-A-香港-HK04","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":30895,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-B-@EXTM3U","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":30990,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-B-美国-US01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":30899,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-B-美国-US02","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":30891,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-B-美国-US03","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":30898,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-B-美国-US04","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":30990,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-C-台湾-TW01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":30892,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-C-台湾-TW02","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":30893,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-D-日本-JP01","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":30896,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-D-日本-JP02","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":30897,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-D-日本-JP03","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":53001,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-D-日本-JP04","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":53002,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-E-新加坡-SG01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53006,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-E-新加坡-SG02","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53005,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-E-新加坡-SG03","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":53004,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-E-新加坡-SG04","type":"vmess","server":"cctv.iepl01.yuntiair365.top","port":53003,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-加拿大-CA01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53007,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-印度-IN01","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":30991,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-土耳其-TR01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53070,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-巴西-BR01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53021,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-德国-DE01","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":30992,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-沙特-SA01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53010,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-法国-FR01","type":"vmess","server":"cctv.iepl02.yuntiair365.top","port":30993,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-泰国-TH01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53052,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-瑞士-CHE01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53011,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-英国-UK01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":31991,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-英国-UK02","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":31992,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-迪拜-UAE01","type":"vmess","server":"cctv.iepl01.yuntidns001.top","port":53009,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-F-马来西亚-MY01","type":"vmess","server":"cctv.iepl02.yuntidns001.top","port":53022,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-G-日本-JP01(海外使用）","type":"vmess","server":"cctv.overseas01.yuntiair365.top","port":53001,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-G-日本-JP02(海外使用）","type":"vmess","server":"cctv.overseas01.yuntiair365.top","port":53002,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-G-美国-US01(海外使用）","type":"vmess","server":"cctv.overseas01.yuntiair365.top","port":30898,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-G-美国-US02(海外使用）","type":"vmess","server":"cctv.overseas01.yuntiair365.top","port":30990,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-G-香港-HK01(海外使用）","type":"vmess","server":"cctv.overseas01.yuntiair365.top","port":30894,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"IEPL-G-香港-HK02(海外使用）","type":"vmess","server":"cctv.overseas01.yuntiair365.top","port":30895,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"PRO-A@vpnhat","type":"vmess","server":"cctv.cm01.yuntidns001.top","port":17808,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.hk01.ladderspeed.top"}},"ws-headers":{"Host":"pro.hk01.ladderspeed.top"}}
+  - {"name":"PRO-A-香港-A-HK01","type":"vmess","server":"pro.link01.ytjslink.com","port":17809,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"PRO-A-香港-HK01 ","type":"vmess","server":"cctv.cm01.yuntidns001.top","port":17808,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.hk01.ladderspeed.top"}},"ws-headers":{"Host":"pro.hk01.ladderspeed.top"}}
+  - {"name":"PRO-A-香港-HK02 ","type":"vmess","server":"pro.hk-01.yuntidns001.top","port":10010,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.hk02.ladderspeed.top"}},"ws-headers":{"Host":"pro.hk02.ladderspeed.top"}}
+  - {"name":"PRO-A-香港-HK03 ","type":"vmess","server":"pro.hk-01.yuntidns001.top","port":19988,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv12","ws-opts":{"path":"/cctv12","headers":{"Host":"pro.hk03.ladderspeed.top"}},"ws-headers":{"Host":"pro.hk03.ladderspeed.top"}}
+  - {"name":"PRO-A-香港-HK04 ","type":"vmess","server":"pro.hk-01.yuntidns001.top","port":20212,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv10","ws-opts":{"path":"/cctv10","headers":{"Host":"pro.hk04.ladderspeed.top"}},"ws-headers":{"Host":"pro.hk04.ladderspeed.top"}}
+  - {"name":"PRO-A-香港-HK05","type":"vmess","server":"pro.hk-02.yuntidns001.top","port":52020,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/youku","ws-opts":{"path":"/youku","headers":{"Host":"pro.hk05.ladderspeed.top"}},"ws-headers":{"Host":"pro.hk05.ladderspeed.top"}}
+  - {"name":"PRO-A-香港-HK06","type":"vmess","server":"pro.hk-02.yuntidns001.top","port":52020,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/node2","ws-opts":{"path":"/node2","headers":{"Host":"pro.hk12.ladderspeed.top"}},"ws-headers":{"Host":"pro.hk12.ladderspeed.top"}}
+  - {"name":"PRO-B-台湾-TW01","type":"vmess","server":"pro.tw-01.yuntidns001.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.tw01.ladderlink.top"}},"ws-headers":{"Host":"pro.tw01.ladderlink.top"}}
+  - {"name":"PRO-B-台湾-TW02","type":"vmess","server":"pro.tw-01.yuntidns001.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.tw02.ladderspeed.top"}},"ws-headers":{"Host":"pro.tw02.ladderspeed.top"}}
+  - {"name":"PRO-B-台湾-TW03","type":"vmess","server":"pro.tw-01.yuntidns001.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/youku","ws-opts":{"path":"/youku","headers":{"Host":"pro.tw03.ladderspeed.top"}},"ws-headers":{"Host":"pro.tw03.ladderspeed.top"}}
+  - {"name":"PRO-B-台湾-TW04","type":"vmess","server":"pro.tw-01.yuntidns001.top","port":29897,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.tw01.ladderlink.top"}},"ws-headers":{"Host":"pro.tw01.ladderlink.top"}}
+  - {"name":"PRO-B-台湾-TW05","type":"vmess","server":"pro.tw-01.yuntidns001.top","port":29902,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/baidu","ws-opts":{"path":"/baidu","headers":{"Host":"pro.tw05.ladderspeed.top"}},"ws-headers":{"Host":"pro.tw05.ladderspeed.top"}}
+  - {"name":"PRO-C-日本-JP01","type":"vmess","server":"pro.jp01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.jp04.ladderspeed.top"}},"ws-headers":{"Host":"pro.jp04.ladderspeed.top"}}
+  - {"name":"PRO-C-日本-JP02","type":"vmess","server":"pro.jp01.yt-relay01.top","port":21612,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"jp02-v2.ladderlink.top"}},"ws-headers":{"Host":"jp02-v2.ladderlink.top"}}
+  - {"name":"PRO-C-日本-JP03","type":"vmess","server":"pro.jp01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"jp-indigo01.ladderspeed.top"}},"ws-headers":{"Host":"jp-indigo01.ladderspeed.top"}}
+  - {"name":"PRO-C-日本-JP04","type":"vmess","server":"pro.jp01.yt-relay01.top","port":21612,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv2","ws-opts":{"path":"/cctv2","headers":{"Host":"pro.jp04-aws.ladderspeed.top"}},"ws-headers":{"Host":"pro.jp04-aws.ladderspeed.top"}}
+  - {"name":"PRO-C-日本-JP05","type":"vmess","server":"pro.jp01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.jp05.ladderlink.top"}},"ws-headers":{"Host":"air.jp05.ladderlink.top"}}
+  - {"name":"PRO-C-日本-JP06","type":"vmess","server":"pro.jp01.yt-relay01.top","port":21612,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.jp06.ladderspeed.top"}},"ws-headers":{"Host":"pro.jp06.ladderspeed.top"}}
+  - {"name":"PRO-D-美国-US01","type":"vmess","server":"pro.us01.yt-relay01.top","port":45892,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"ded.usa02.ladderspeed.top"}},"ws-headers":{"Host":"ded.usa02.ladderspeed.top"}}
+  - {"name":"PRO-D-美国-US02","type":"vmess","server":"pro.us01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv2","ws-opts":{"path":"/cctv2","headers":{"Host":"pro.usa02.ladderspeed.top"}},"ws-headers":{"Host":"pro.usa02.ladderspeed.top"}}
+  - {"name":"PRO-D-美国-US03","type":"vmess","server":"pro.us01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv2","ws-opts":{"path":"/cctv2","headers":{"Host":"pro.usa01.ladderspeed.top"}},"ws-headers":{"Host":"pro.usa01.ladderspeed.top"}}
+  - {"name":"PRO-D-美国-US04","type":"vmess","server":"pro.us01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv1","ws-opts":{"path":"/cctv1","headers":{"Host":"vip2-usa1-v2.ladderspeed.top"}},"ws-headers":{"Host":"vip2-usa1-v2.ladderspeed.top"}}
+  - {"name":"PRO-D-美国-US05","type":"vmess","server":"pro.us01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv2","ws-opts":{"path":"/cctv2","headers":{"Host":"usa05he03.ladderlink.top"}},"ws-headers":{"Host":"usa05he03.ladderlink.top"}}
+  - {"name":"PRO-D-美国-US06","type":"vmess","server":"pro.us01.yt-relay01.top","port":10088,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv12","ws-opts":{"path":"/cctv12","headers":{"Host":"pro.usa06.ladderspeed.top"}},"ws-headers":{"Host":"pro.usa06.ladderspeed.top"}}
+  - {"name":"PRO-D-美国-US07","type":"vmess","server":"pro.us01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.usa07.ladderspeed.top"}},"ws-headers":{"Host":"pro.usa07.ladderspeed.top"}}
+  - {"name":"PRO-D-美国-US08","type":"vmess","server":"pro.us01.yt-relay01.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv2","ws-opts":{"path":"/cctv2","headers":{"Host":"pro.usa08.ladderspeed.top"}},"ws-headers":{"Host":"pro.usa08.ladderspeed.top"}}
+  - {"name":"PRO-E-韩国-KR01","type":"vmess","server":"cctv.shcn2.01.yuntidns001.top","port":51234,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv12","ws-opts":{"path":"/cctv12","headers":{"Host":"pro.kr01.ladderspeed.top"}},"ws-headers":{"Host":"pro.kr01.ladderspeed.top"}}
+  - {"name":"PRO-E-韩国-KR02","type":"vmess","server":"cctv.shcn2.01.yuntidns001.top","port":51234,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv12","ws-opts":{"path":"/cctv12","headers":{"Host":"pro.kr02.ladderspeed.top"}},"ws-headers":{"Host":"pro.kr02.ladderspeed.top"}}
+  - {"name":"PRO-F-新加坡-SG01","type":"vmess","server":"cctv.shcn2.02.yuntidns001.top","port":51235,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv12","ws-opts":{"path":"/cctv12","headers":{"Host":"pro.sg01.ladderspeed.top"}},"ws-headers":{"Host":"pro.sg01.ladderspeed.top"}}
+  - {"name":"PRO-F-新加坡-SG02","type":"vmess","server":"cctv.shcn2.02.yuntidns001.top","port":51235,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv12","ws-opts":{"path":"/cctv12","headers":{"Host":"pro.sg02.ladderspeed.top"}},"ws-headers":{"Host":"pro.sg02.ladderspeed.top"}}
+  - {"name":"PRO-F-英国-UK01","type":"vmess","server":"cctv.shcn2.02.yuntidns001.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"gb01.ladderspeed.top"}},"ws-headers":{"Host":"gb01.ladderspeed.top"}}
+  - {"name":"PRO-F-英国-UK02","type":"vmess","server":"cctv.shcn2.02.yuntidns001.top","port":18010,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv12","ws-opts":{"path":"/cctv12","headers":{"Host":"gb02.ladderspeed.top"}},"ws-headers":{"Host":"gb02.ladderspeed.top"}}
+  - {"name":"PRO-H-澳洲-AU01","type":"vmess","server":"cctv.shcn2.01.yuntidns001.top","port":21612,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/node2","ws-opts":{"path":"/node2","headers":{"Host":"pro.aus01.ladderspeed.top"}},"ws-headers":{"Host":"pro.aus01.ladderspeed.top"}}
+  - {"name":"轻量-A@EXM3U","type":"vmess","server":"cctv1.cm01.yuntiair365.top","port":38090,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.hk05.ladderlink.top"}},"ws-headers":{"Host":"air.hk05.ladderlink.top"}}
+  - {"name":"轻量-A-香港-A-HK01","type":"vmess","server":"air.link01.ytjslink.com","port":38092,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"轻量-A-香港-HK01","type":"vmess","server":"cctv1.cm01.yuntiair365.top","port":38090,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.hk05.ladderlink.top"}},"ws-headers":{"Host":"air.hk05.ladderlink.top"}}
+  - {"name":"轻量-A-香港-HK02 ","type":"vmess","server":"air.hk01.yuntiair365.top","port":20212,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"hk01-v2.ladderlink.top"}},"ws-headers":{"Host":"hk01-v2.ladderlink.top"}}
+  - {"name":"轻量-A-香港-HK03 ","type":"vmess","server":"air.hk01.yuntiair365.top","port":20212,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv2","ws-opts":{"path":"/cctv2","headers":{"Host":"air.hk03.ladderlink.top"}},"ws-headers":{"Host":"air.hk03.ladderlink.top"}}
+  - {"name":"轻量-A-香港-HK04 ","type":"vmess","server":"air.hk01.yuntiair365.top","port":20212,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.hk04.ladderlink.top"}},"ws-headers":{"Host":"air.hk04.ladderlink.top"}}
+  - {"name":"轻量-B-台湾-TW01","type":"vmess","server":"cctv1.cm01.tw.yuntiair365.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.tw01.ladderlink.top"}},"ws-headers":{"Host":"air.tw01.ladderlink.top"}}
+  - {"name":"轻量-B-台湾-TW02","type":"vmess","server":"cctv1.cm01.tw.yuntiair365.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.tw02.ladderlink.top"}},"ws-headers":{"Host":"air.tw02.ladderlink.top"}}
+  - {"name":"轻量-B-台湾-TW03","type":"vmess","server":"cctv1.cm01.tw.yuntiair365.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/youku","ws-opts":{"path":"/youku","headers":{"Host":"air.tw03.ladderlink.top"}},"ws-headers":{"Host":"air.tw03.ladderlink.top"}}
+  - {"name":"轻量-B-台湾-TW04","type":"vmess","server":"cctv1.cm01.tw.yuntiair365.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.tw01.ladderlink.top"}},"ws-headers":{"Host":"air.tw01.ladderlink.top"}}
+  - {"name":"轻量-B-台湾-TW05","type":"vmess","server":"cctv1.cm01.tw.yuntiair365.top","port":29902,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.tw05.ladderlink.top"}},"ws-headers":{"Host":"air.tw05.ladderlink.top"}}
+  - {"name":"轻量-C-日本-JP01","type":"vmess","server":"air.jp01.yunti-relay02.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv1","ws-opts":{"path":"/cctv1","headers":{"Host":"jp01-v2.ladderspeed.top"}},"ws-headers":{"Host":"jp01-v2.ladderspeed.top"}}
+  - {"name":"轻量-C-日本-JP02","type":"vmess","server":"air.jp01.yunti-relay02.top","port":10085,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"pro.jp02.ladderspeed.top"}},"ws-headers":{"Host":"pro.jp02.ladderspeed.top"}}
+  - {"name":"轻量-C-日本-JP03","type":"vmess","server":"air.jp01.yunti-relay02.top","port":21612,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv1","ws-opts":{"path":"/cctv1","headers":{"Host":"jp01-v2.ladderlink.top"}},"ws-headers":{"Host":"jp01-v2.ladderlink.top"}}
+  - {"name":"轻量-C-日本-JP04","type":"vmess","server":"air.jp01.yunti-relay02.top","port":21612,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.jp04.ladderlink.top"}},"ws-headers":{"Host":"air.jp04.ladderlink.top"}}
+  - {"name":"轻量-D-美国-US01","type":"vmess","server":"air.us01.yunti-relay02.top","port":45883,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"ded.usa03.ladderspeed.top"}},"ws-headers":{"Host":"ded.usa03.ladderspeed.top"}}
+  - {"name":"轻量-D-美国-US02","type":"vmess","server":"air.us01.yunti-relay02.top","port":10088,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/ccyv1","ws-opts":{"path":"/ccyv1","headers":{"Host":"air.usa02.ladderlink.top"}},"ws-headers":{"Host":"air.usa02.ladderlink.top"}}
+  - {"name":"轻量-D-美国-US03","type":"vmess","server":"air.us01.yunti-relay02.top","port":10088,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/youku","ws-opts":{"path":"/youku","headers":{"Host":"air.usa003.ladderlink.top"}},"ws-headers":{"Host":"air.usa003.ladderlink.top"}}
+  - {"name":"轻量-D-美国-US04","type":"vmess","server":"air.us01.yunti-relay02.top","port":10088,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/v2ray","ws-opts":{"path":"/v2ray","headers":{"Host":"air.usa04.ladderlink.top"}},"ws-headers":{"Host":"air.usa04.ladderlink.top"}}
+  - {"name":"轻量-D-美国-US05","type":"vmess","server":"air.us01.yunti-relay02.top","port":10086,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv11","ws-opts":{"path":"/cctv11","headers":{"Host":"air.usa05.ladderlink.top"}},"ws-headers":{"Host":"air.usa05.ladderlink.top"}}
+  - {"name":"轻量-D-美国-US06","type":"vmess","server":"air.us01.yunti-relay02.top","port":10088,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv1","ws-opts":{"path":"/cctv1","headers":{"Host":"air.usa06.ladderlink.top"}},"ws-headers":{"Host":"air.usa06.ladderlink.top"}}
+  - {"name":"轻量-E-新加坡-SG01","type":"vmess","server":"cctv1.sg.yuntiair365.top","port":29900,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/cctv1","ws-opts":{"path":"/cctv1","headers":{"Host":"sg01-v2.ladderlink.top"}},"ws-headers":{"Host":"sg01-v2.ladderlink.top"}}
+  - {"name":"轻量-E-新加坡-SG02","type":"vmess","server":"cctv1.sg.yuntiair365.top","port":29900,"uuid":"40db85f1-223f-374f-a49a-dbc9736c430f","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-path":"/youku","ws-opts":{"path":"/youku","headers":{"Host":"sg02-v2.ladderlink.top"}},"ws-headers":{"Host":"sg02-v2.ladderlink.top"}}
+
+proxy-groups:
+-
+  name: ❤️vpnhat❤️
+  type: select
+  proxies:
+    - 'IEPL-A-香港-HK01 '
+    - 'IEPL-A-香港-HK02 '
+    - IEPL-A-香港-HK03
+    - IEPL-A-香港-HK04
+    - IEPL-B-@EXTM3U
+    - IEPL-B-美国-US01
+    - IEPL-B-美国-US02
+    - IEPL-B-美国-US03
+    - IEPL-B-美国-US04
+    - IEPL-C-台湾-TW01
+    - IEPL-C-台湾-TW02
+    - IEPL-D-日本-JP01
+    - IEPL-D-日本-JP02
+    - IEPL-D-日本-JP03
+    - IEPL-D-日本-JP04
+    - IEPL-E-新加坡-SG01
+    - IEPL-E-新加坡-SG02
+    - IEPL-E-新加坡-SG03
+    - IEPL-E-新加坡-SG04
+    - IEPL-F-加拿大-CA01
+    - IEPL-F-印度-IN01
+    - IEPL-F-土耳其-TR01
+    - IEPL-F-巴西-BR01
+    - IEPL-F-德国-DE01
+    - IEPL-F-沙特-SA01
+    - IEPL-F-法国-FR01
+    - IEPL-F-泰国-TH01
+    - IEPL-F-瑞士-CHE01
+    - IEPL-F-英国-UK01
+    - IEPL-F-英国-UK02
+    - IEPL-F-迪拜-UAE01
+    - IEPL-F-马来西亚-MY01
+    - IEPL-G-日本-JP01(海外使用）
+    - IEPL-G-日本-JP02(海外使用）
+    - IEPL-G-美国-US01(海外使用）
+    - IEPL-G-美国-US02(海外使用）
+    - IEPL-G-香港-HK01(海外使用）
+    - IEPL-G-香港-HK02(海外使用）
+    - PRO-A@vpnhat
+    - PRO-A-香港-A-HK01
+    - 'PRO-A-香港-HK01 '
+    - 'PRO-A-香港-HK02 '
+    - 'PRO-A-香港-HK03 '
+    - 'PRO-A-香港-HK04 '
+    - PRO-A-香港-HK05
+    - PRO-A-香港-HK06
+    - PRO-B-台湾-TW01
+    - PRO-B-台湾-TW02
+    - PRO-B-台湾-TW03
+    - PRO-B-台湾-TW04
+    - PRO-B-台湾-TW05
+    - PRO-C-日本-JP01
+    - PRO-C-日本-JP02
+    - PRO-C-日本-JP03
+    - PRO-C-日本-JP04
+    - PRO-C-日本-JP05
+    - PRO-C-日本-JP06
+    - PRO-D-美国-US01
+    - PRO-D-美国-US02
+    - PRO-D-美国-US03
+    - PRO-D-美国-US04
+    - PRO-D-美国-US05
+    - PRO-D-美国-US06
+    - PRO-D-美国-US07
+    - PRO-D-美国-US08
+    - PRO-E-韩国-KR01
+    - PRO-E-韩国-KR02
+    - PRO-F-新加坡-SG01
+    - PRO-F-新加坡-SG02
+    - PRO-F-英国-UK01
+    - PRO-F-英国-UK02
+    - PRO-H-澳洲-AU01
+    - 轻量-A@EXM3U
+    - 轻量-A-香港-A-HK01
+    - 轻量-A-香港-HK01
+    - '轻量-A-香港-HK02 '
+    - '轻量-A-香港-HK03 '
+    - '轻量-A-香港-HK04 '
+    - 轻量-B-台湾-TW01
+    - 轻量-B-台湾-TW02
+    - 轻量-B-台湾-TW03
+    - 轻量-B-台湾-TW04
+    - 轻量-B-台湾-TW05
+    - 轻量-C-日本-JP01
+    - 轻量-C-日本-JP02
+    - 轻量-C-日本-JP03
+    - 轻量-C-日本-JP04
+    - 轻量-D-美国-US01
+    - 轻量-D-美国-US02
+    - 轻量-D-美国-US03
+    - 轻量-D-美国-US04
+    - 轻量-D-美国-US05
+    - 轻量-D-美国-US06
+    - 轻量-E-新加坡-SG01
+    - 轻量-E-新加坡-SG02
+-
+  name: Domestic
+  type: select
+  proxies:
+    - DIRECT
+    - ❤️vpnhat❤️
+-
+  name: AsianTV
+  type: select
+  proxies:
+    - Domestic
+    - ❤️vpnhat❤️
+-
+  name: GlobalTV
+  type: select
+  proxies:
+    - ❤️vpnhat❤️
+-
+  name: Others
+  type: select
+  proxies:
+    - ❤️vpnhat❤️
+    - Domestic
+
+
+# 规则
+rules:
+# (GlobalTV)
+# > ABC
+- DOMAIN-SUFFIX,edgedatg.com,GlobalTV
+- DOMAIN-SUFFIX,go.com,GlobalTV
+
+# > AbemaTV
+- DOMAIN,linear-abematv.akamaized.net,GlobalTV
+- DOMAIN-SUFFIX,abema.io,GlobalTV
+- DOMAIN-SUFFIX,abema.tv,GlobalTV
+- DOMAIN-SUFFIX,akamaized.net,GlobalTV
+- DOMAIN-SUFFIX,ameba.jp,GlobalTV
+- DOMAIN-SUFFIX,hayabusa.io,GlobalTV
+
+
+# > Amazon Prime Video
+- DOMAIN-SUFFIX,aiv-cdn.net,GlobalTV
+- DOMAIN-SUFFIX,amazonaws.com,GlobalTV
+- DOMAIN-SUFFIX,amazonvideo.com,GlobalTV
+- DOMAIN-SUFFIX,llnwd.net,GlobalTV
+
+# > Bahamut
+- DOMAIN-SUFFIX,bahamut.com.tw,GlobalTV
+- DOMAIN-SUFFIX,gamer.com.tw,GlobalTV
+- DOMAIN-SUFFIX,hinet.net,GlobalTV
+
+# > BBC
+- DOMAIN-KEYWORD,bbcfmt,GlobalTV
+- DOMAIN-KEYWORD,co.uk,GlobalTV
+- DOMAIN-KEYWORD,uk-live,GlobalTV
+- DOMAIN-SUFFIX,bbc.co,GlobalTV
+- DOMAIN-SUFFIX,bbc.co.uk,GlobalTV
+- DOMAIN-SUFFIX,bbc.com,GlobalTV
+- DOMAIN-SUFFIX,bbci.co,GlobalTV
+- DOMAIN-SUFFIX,bbci.co.uk,GlobalTV
+
+# > CHOCO TV
+- DOMAIN-SUFFIX,chocotv.com.tw,GlobalTV
+
+# > Epicgames
+- DOMAIN-KEYWORD,epicgames,GlobalTV
+- DOMAIN-SUFFIX,helpshift.com,GlobalTV
+
+# > Fox+
+- DOMAIN-KEYWORD,foxplus,GlobalTV
+- DOMAIN-SUFFIX,config.fox.com,GlobalTV
+- DOMAIN-SUFFIX,emome.net,GlobalTV
+- DOMAIN-SUFFIX,fox.com,GlobalTV
+- DOMAIN-SUFFIX,foxdcg.com,GlobalTV
+- DOMAIN-SUFFIX,foxnow.com,GlobalTV
+- DOMAIN-SUFFIX,foxplus.com,GlobalTV
+- DOMAIN-SUFFIX,foxplay.com,GlobalTV
+- DOMAIN-SUFFIX,ipinfo.io,GlobalTV
+- DOMAIN-SUFFIX,mstage.io,GlobalTV
+- DOMAIN-SUFFIX,now.com,GlobalTV
+- DOMAIN-SUFFIX,theplatform.com,GlobalTV
+- DOMAIN-SUFFIX,urlload.net,GlobalTV
+
+# > HBO && HBO Go
+- DOMAIN-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,GlobalTV
+- DOMAIN-SUFFIX,hbo.com,GlobalTV
+- DOMAIN-SUFFIX,hboasia.com,GlobalTV
+- DOMAIN-SUFFIX,hbogo.com,GlobalTV
+- DOMAIN-SUFFIX,hbogoasia.hk,GlobalTV
+
+# > Hulu
+- DOMAIN-SUFFIX,happyon.jp,GlobalTV
+- DOMAIN-SUFFIX,hulu.com,GlobalTV
+- DOMAIN-SUFFIX,huluim.com,GlobalTV
+- DOMAIN-SUFFIX,hulustream.com,GlobalTV
+
+# > Imkan
+- DOMAIN-SUFFIX,imkan.tv,GlobalTV
+
+# > JOOX
+- DOMAIN-SUFFIX,joox.com,GlobalTV
+
+# > MytvSUPER
+- DOMAIN-KEYWORD,nowtv100,GlobalTV
+- DOMAIN-KEYWORD,rthklive,GlobalTV
+- DOMAIN-SUFFIX,mytvsuper.com,GlobalTV
+- DOMAIN-SUFFIX,tvb.com,GlobalTV
+
+# > Netflix
+- DOMAIN-SUFFIX,netflix.com,GlobalTV
+- DOMAIN-SUFFIX,netflix.net,GlobalTV
+- DOMAIN-SUFFIX,nflxext.com,GlobalTV
+- DOMAIN-SUFFIX,nflximg.com,GlobalTV
+- DOMAIN-SUFFIX,nflximg.net,GlobalTV
+- DOMAIN-SUFFIX,nflxso.net,GlobalTV
+- DOMAIN-SUFFIX,nflxvideo.net,GlobalTV
+
+# > Pandora
+- DOMAIN-SUFFIX,pandora.com,GlobalTV
+
+# > Sky GO
+- DOMAIN-SUFFIX,sky.com,GlobalTV
+- DOMAIN-SUFFIX,skygo.co.nz,GlobalTV
+
+# > Spotify
+- DOMAIN-KEYWORD,spotify,GlobalTV
+- DOMAIN-SUFFIX,scdn.co,GlobalTV
+- DOMAIN-SUFFIX,spoti.fi,GlobalTV
+
+# > viuTV
+- DOMAIN-SUFFIX,viu.tv,GlobalTV
+
+# > Youtube
+- DOMAIN-KEYWORD,youtube,GlobalTV
+- DOMAIN-SUFFIX,googlevideo.com,GlobalTV
+- DOMAIN-SUFFIX,gvt2.com,GlobalTV
+- DOMAIN-SUFFIX,youtu.be,GlobalTV
+
+# (AsianTV)
+# > Bilibili
+- DOMAIN-KEYWORD,bilibili,AsianTV
+- DOMAIN-SUFFIX,acg.tv,AsianTV
+- DOMAIN-SUFFIX,acgvideo.com,AsianTV
+- DOMAIN-SUFFIX,b23.tv,AsianTV
+- DOMAIN-SUFFIX,biliapi.com,AsianTV
+- DOMAIN-SUFFIX,biliapi.net,AsianTV
+- DOMAIN-SUFFIX,bilibili.com,AsianTV
+- DOMAIN-SUFFIX,biligame.com,AsianTV
+- DOMAIN-SUFFIX,biligame.net,AsianTV
+- DOMAIN-SUFFIX,hdslb.com,AsianTV
+- DOMAIN-SUFFIX,im9.com,AsianTV
+
+# > IQIYI
+- DOMAIN-KEYWORD,qiyi,AsianTV
+- DOMAIN-SUFFIX,qy.net,AsianTV
+
+# > letv
+- DOMAIN-SUFFIX,api.mob.app.letv.com,AsianTV
+
+# > NeteaseMusic
+- DOMAIN-SUFFIX,163yun.com,AsianTV
+- DOMAIN-SUFFIX,music.126.net,AsianTV
+- DOMAIN-SUFFIX,music.163.com,AsianTV
+
+# > Tencent Video
+- DOMAIN-SUFFIX,vv.video.qq.com,AsianTV
+
+# China Area Network
+# > Microsoft
+- DOMAIN-SUFFIX,microsoft.com,Domestic
+- DOMAIN-SUFFIX,windows.net,Domestic
+- DOMAIN-SUFFIX,sfx.ms,Domestic
+- DOMAIN-SUFFIX,sharepoint.com,Domestic
+- DOMAIN-KEYWORD,officecdn,Domestic
+# > Blizzard
+- DOMAIN-SUFFIX,blizzard.com,Domestic
+- DOMAIN-SUFFIX,battle.net,Domestic
+- DOMAIN,blzddist1-a.akamaihd.net,Domestic
+# > Steam
+- DOMAIN-SUFFIX,steampowered.com,Domestic
+- DOMAIN-SUFFIX,steam-chat.com,Domestic
+- DOMAIN-KEYWORD,steamcdn,Domestic
+- DOMAIN-KEYWORD,steamstore,Domestic
+- DOMAIN-KEYWORD,steamuserimages,Domestic
+- DOMAIN-KEYWORD,steambroadcast,Domestic
+# > Tencent
+#USER-AGENT,MicroMessenger%20Client,Domestic
+#USER-AGENT,WeChat*,Domestic
+- DOMAIN-SUFFIX,qq.com,Domestic
+- DOMAIN-SUFFIX,qpic.cn,Domestic
+- DOMAIN-SUFFIX,tencent.com,Domestic
+# > Alibaba
+- DOMAIN-SUFFIX,fxsfxs.com,Domestic
+- DOMAIN-SUFFIX,fxscloud.com,Domestic
+- DOMAIN-SUFFIX,yuntijiasu.com,Domestic
+- DOMAIN-SUFFIX,yunti1.com,Domestic
+- DOMAIN-SUFFIX,ytjscloud.com,Domestic
+- DOMAIN-SUFFIX,yunti345.com,Domestic
+- DOMAIN-SUFFIX,cscdn.gay,Domestic
+- DOMAIN-SUFFIX,alibaba.com,Domestic
+- DOMAIN-SUFFIX,alicdn.com,Domestic
+- DOMAIN-SUFFIX,amap.com,Domestic
+- DOMAIN-SUFFIX,dingtalk.com,Domestic
+- DOMAIN-SUFFIX,taobao.com,Domestic
+- DOMAIN-SUFFIX,tmall.com,Domestic
+- DOMAIN-SUFFIX,ykimg.com,Domestic
+- DOMAIN-SUFFIX,youku.com,Domestic
+- DOMAIN-SUFFIX,xiami.com,Domestic
+- DOMAIN-SUFFIX,xiami.net,Domestic
+# > NetEase
+- DOMAIN-SUFFIX,163.com,Domestic
+- DOMAIN-SUFFIX,126.net,Domestic
+- DOMAIN-SUFFIX,163yun.com,Domestic
+# > Sohu
+- DOMAIN-SUFFIX,sohu.com.cn,Domestic
+- DOMAIN-SUFFIX,itc.cn,Domestic
+- DOMAIN-SUFFIX,sohu.com,Domestic
+- DOMAIN-SUFFIX,v-56.com,Domestic
+# > Sina
+- DOMAIN-SUFFIX,weibo.com,Domestic
+- DOMAIN-SUFFIX,weibo.cn,Domestic
+# > JD
+- DOMAIN-SUFFIX,jd.com,Domestic
+- DOMAIN-SUFFIX,jd.hk,Domestic
+- DOMAIN-SUFFIX,360buyimg.com,Domestic
+# > MI
+- DOMAIN-SUFFIX,duokan.com,Domestic
+- DOMAIN-SUFFIX,mi-img.com,Domestic
+- DOMAIN-SUFFIX,mifile.cn,Domestic
+- DOMAIN-SUFFIX,xiaomi.com,Domestic
+# > bilibili
+- DOMAIN-SUFFIX,acgvideo.com,Domestic
+- DOMAIN-SUFFIX,bilibili.com,Domestic
+- DOMAIN-SUFFIX,hdslb.com,Domestic
+# > iQiyi
+- DOMAIN-SUFFIX,iqiyi.com,Domestic
+- DOMAIN-SUFFIX,iqiyipic.com,Domestic
+- DOMAIN-SUFFIX,71.am.com,Domestic
+# > HunanTV
+- DOMAIN-SUFFIX,hitv.com,Domestic
+- DOMAIN-SUFFIX,mgtv.com,Domestic
+# > Meitu
+- DOMAIN-SUFFIX,meitu.com,Domestic
+- DOMAIN-SUFFIX,meitudata.com,Domestic
+- DOMAIN-SUFFIX,meipai.com,Domestic
+# > YYeTs
+- DOMAIN-SUFFIX,zmzapi.com,Domestic
+- DOMAIN-SUFFIX,zimuzu.tv,Domestic
+- DOMAIN-SUFFIX,zmzfile.com,Domestic
+- DOMAIN-SUFFIX,zmzapi.net,Domestic
+# > 蛋蛋赞
+- DOMAIN-SUFFIX,baduziyuan.com,Domestic
+- DOMAIN-SUFFIX,com-hs-hkdy.com,Domestic
+- DOMAIN-SUFFIX,czybjz.com,Domestic
+- DOMAIN-SUFFIX,dandanzan.com,Domestic
+- DOMAIN-SUFFIX,fjhps.com,Domestic
+- DOMAIN-SUFFIX,kuyunbo.club,Domestic
+# > Baidu
+- DOMAIN-SUFFIX,baidu.com,Domestic
+- DOMAIN-SUFFIX,baidubcr.com,Domestic
+- DOMAIN-SUFFIX,bdstatic.com,Domestic
+# > ChinaNet
+- DOMAIN-SUFFIX,189.cn,Domestic
+- DOMAIN-SUFFIX,21cn.com,Domestic
+# > ByteDance
+- DOMAIN-SUFFIX,bytecdn.cn,Domestic
+- DOMAIN-SUFFIX,pstatp.com,Domestic
+- DOMAIN-SUFFIX,snssdk.com,Domestic
+- DOMAIN-SUFFIX,toutiao.com,Domestic
+# > Content Delivery Network
+# > Akamai
+- DOMAIN-SUFFIX,akadns.net,Domestic
+# - DOMAIN-SUFFIX,akamai.net,Domestic
+# - DOMAIN-SUFFIX,akamaiedge.net,Domestic
+# - DOMAIN-SUFFIX,akamaihd.net,Domestic
+# - DOMAIN-SUFFIX,akamaistream.net,Domestic
+# - DOMAIN-SUFFIX,akamaized.net,Domestic
+# > ChinaNetCenter
+- DOMAIN-SUFFIX,chinanetcenter.com,Domestic
+- DOMAIN-SUFFIX,wangsu.com,Domestic
+# > IP Query
+- DOMAIN-SUFFIX,ipip.net,Domestic
+- DOMAIN-SUFFIX,ip.cn,Domestic
+- DOMAIN-SUFFIX,ip.la,Domestic
+- DOMAIN-SUFFIX,ip-cdn.com,Domestic
+- DOMAIN-SUFFIX,ipv6-test.com,Domestic
+- DOMAIN-SUFFIX,test-ipv6.com,Domestic
+- DOMAIN-SUFFIX,whatismyip.com,Domestic
+- DOMAIN,ip.bjango.com,Domestic
+# > Other
+- DOMAIN-SUFFIX,40017.cn,Domestic
+- DOMAIN-SUFFIX,broadcasthe.net,Domestic
+- DOMAIN-SUFFIX,cailianpress.com,Domestic
+- DOMAIN-SUFFIX,chdbits.co,Domestic
+- DOMAIN-SUFFIX,chushou.tv,Domestic
+- DOMAIN-SUFFIX,cmbchina.com,Domestic
+- DOMAIN-SUFFIX,cmbimg.com,Domestic
+- DOMAIN-SUFFIX,cmct.tv,Domestic
+- DOMAIN-SUFFIX,cmvideo.cn,Domestic
+- DOMAIN-SUFFIX,cnlang.org,Domestic
+- DOMAIN-SUFFIX,doubanio.com,Domestic
+- DOMAIN-SUFFIX,douyu.com,Domestic
+- DOMAIN-SUFFIX,douyucdn.cn,Domestic
+- DOMAIN-SUFFIX,dxycdn.com,Domestic
+- DOMAIN-SUFFIX,hicloud.com,Domestic
+- DOMAIN-SUFFIX,hdchina.org,Domestic
+- DOMAIN-SUFFIX,hdcmct.org,Domestic
+- DOMAIN-SUFFIX,ithome.com,Domestic
+- DOMAIN-SUFFIX,kkmh.com,Domestic
+- DOMAIN-SUFFIX,ksosoft.com,Domestic
+- DOMAIN-SUFFIX,maoyun.tv,Domestic
+- DOMAIN-SUFFIX,meituan.net,Domestic
+- DOMAIN-SUFFIX,mobike.com,Domestic
+- DOMAIN-SUFFIX,mubu.com,Domestic
+- DOMAIN-SUFFIX,myzaker.com,Domestic
+- DOMAIN-SUFFIX,ourbits.club,Domestic
+- DOMAIN-SUFFIX,passthepopcorn.me,Domestic
+- DOMAIN-SUFFIX,paypal.com,Domestic
+- DOMAIN-SUFFIX,paypalobjects.com,Domestic
+- DOMAIN-SUFFIX,privatehd.to,Domestic
+- DOMAIN-SUFFIX,redacted.ch,Domestic
+- DOMAIN-SUFFIX,ruguoapp.com,Domestic
+- DOMAIN-SUFFIX,smzdm.com,Domestic
+- DOMAIN-SUFFIX,sogou.com,Domestic
+- DOMAIN-SUFFIX,teamviewer.com,Domestic
+- DOMAIN-SUFFIX,totheglory.im,Domestic
+- DOMAIN-SUFFIX,tp.m-team.cc,Domestic
+- DOMAIN-SUFFIX,udacity.com,Domestic
+- DOMAIN-SUFFIX,xmcdn.com,Domestic
+- DOMAIN-SUFFIX,yangkeduo.com,Domestic
+- DOMAIN-SUFFIX,zhihu.com,Domestic
+- DOMAIN-SUFFIX,zhimg.com,Domestic
+#USER-AGENT,NeteaseMusic*,Domestic
+#USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,Domestic
+
+# (DNS Cache Pollution Protection)
+# > Google
+- DOMAIN-SUFFIX,linkedin.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,appspot.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,blogger.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,getoutline.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gvt0.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gvt1.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gvt3.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,❤️vpnhat❤️
+- DOMAIN-KEYWORD,google,❤️vpnhat❤️
+- DOMAIN-KEYWORD,blogspot,❤️vpnhat❤️
+# > Facebook
+- DOMAIN-SUFFIX,cdninstagram.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fb.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fb.me,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fbaddins.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fbcdn.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fbsbx.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fbworkmail.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,instagram.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,m.me,❤️vpnhat❤️
+- DOMAIN-SUFFIX,messenger.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,oculus.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,oculuscdn.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,rocksdb.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,whatsapp.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,whatsapp.net,❤️vpnhat❤️
+- DOMAIN-KEYWORD,facebook,❤️vpnhat❤️
+# > Twitter
+- DOMAIN-SUFFIX,pscp.tv,❤️vpnhat❤️
+- DOMAIN-SUFFIX,periscope.tv,❤️vpnhat❤️
+- DOMAIN-SUFFIX,t.co,❤️vpnhat❤️
+- DOMAIN-SUFFIX,twimg.co,❤️vpnhat❤️
+- DOMAIN-SUFFIX,twimg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,twitpic.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,vine.co,❤️vpnhat❤️
+- DOMAIN-KEYWORD,twitter,❤️vpnhat❤️
+# > Telegram
+- DOMAIN-SUFFIX,t.me,❤️vpnhat❤️
+- DOMAIN-SUFFIX,tdesktop.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,telegra.ph,❤️vpnhat❤️
+- DOMAIN-SUFFIX,telegram.me,❤️vpnhat❤️
+- DOMAIN-SUFFIX,telegram.org,❤️vpnhat❤️
+# > Line
+- DOMAIN-SUFFIX,line.me,❤️vpnhat❤️
+- DOMAIN-SUFFIX,line-apps.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,line-scdn.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,naver.jp,❤️vpnhat❤️
+# > Other
+- DOMAIN-SUFFIX,4shared.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,881903.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,abc.net.au,❤️vpnhat❤️
+- DOMAIN-SUFFIX,abebooks.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,amazon.co.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,apigee.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,apk-dl.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,apkmirror.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,apkmonk.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,apkpure.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,aptoide.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,archive.is,❤️vpnhat❤️
+- DOMAIN-SUFFIX,archive.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,arte.tv,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ask.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,avgle.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,badoo.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bandwagonhost.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bbc.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,behance.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bibox.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,biggo.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,binance.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bitcointalk.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bitfinex.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bitmex.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bit-z.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bloglovin.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bloomberg.cn,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bloomberg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,book.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,booklive.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,books.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,box.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,brookings.edu,❤️vpnhat❤️
+- DOMAIN-SUFFIX,businessinsider.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bwh1.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,castbox.fm,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cbc.ca,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cdw.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,change.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ck101.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,clarionproject.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,clyp.it,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cna.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,comparitech.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,conoha.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,crucial.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cts.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cw.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cyberctm.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dailymotion.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dailyview.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,daum.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,daumcdn.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dcard.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,deepdiscount.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,deezer.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,depositphotos.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,disconnect.me,❤️vpnhat❤️
+- DOMAIN-SUFFIX,discordapp.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,discordapp.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,disqus.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dns2go.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dropbox.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dropboxusercontent.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,duckduckgo.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dw.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dynu.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,earthcam.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ebookservice.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,economist.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,edgecastcdn.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,edu,❤️vpnhat❤️
+- DOMAIN-SUFFIX,elpais.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,enanyang.my,❤️vpnhat❤️
+- DOMAIN-SUFFIX,euronews.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,feedly.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,files.wordpress.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,flickr.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,flitto.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,foreignpolicy.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,friday.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gate.io,❤️vpnhat❤️
+- DOMAIN-SUFFIX,getlantern.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,getsync.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,globalvoices.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,goo.ne.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,goodreads.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gov.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gumroad.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hbg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hightail.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hk01.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hkbf.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hkbookcity.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hkej.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hket.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hkgolden.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hootsuite.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hudson.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,huobi.pro,❤️vpnhat❤️
+- DOMAIN-SUFFIX,initiummall.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ipfs.io,❤️vpnhat❤️
+- DOMAIN-SUFFIX,issuu.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,japantimes.co.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,jiji.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,jinx.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,jkforum.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,joinmastodon.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,kakao.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,lihkg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,live.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,mail.ru,❤️vpnhat❤️
+- DOMAIN-SUFFIX,matters.news,❤️vpnhat❤️
+- DOMAIN-SUFFIX,medium.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,mega.nz,❤️vpnhat❤️
+- DOMAIN-SUFFIX,mil,❤️vpnhat❤️
+- DOMAIN-SUFFIX,mobile01.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,naver.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nikkei.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nofile.io,❤️vpnhat❤️
+- DOMAIN-SUFFIX,now.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nyt.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nytchina.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nytcn.me,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nytco.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nytimes.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nytimg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nytlog.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nytstyle.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ok.ru,❤️vpnhat❤️
+- DOMAIN-SUFFIX,okex.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,pcloud.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,pinimg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,pixiv.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,pornhub.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,pureapk.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,quora.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,quoracdn.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,rakuten.co.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,reddit.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,redditmedia.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,resilio.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,reuters.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,scmp.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,scribd.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,seatguru.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,shadowsocks.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,slideshare.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,soundcloud.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,startpage.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,steamcommunity.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,steemit.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,t66y.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,teco-hk.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,teco-mo.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,teddysun.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,theinitium.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,tineye.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,torproject.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,tumblr.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,turbobit.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,twitch.tv,❤️vpnhat❤️
+- DOMAIN-SUFFIX,udn.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,unseen.is,❤️vpnhat❤️
+- DOMAIN-SUFFIX,upmedia.mg,❤️vpnhat❤️
+- DOMAIN-SUFFIX,uptodown.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ustream.tv,❤️vpnhat❤️
+- DOMAIN-SUFFIX,uwants.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,v2ray.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,viber.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,videopress.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,vimeo.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,voxer.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,vzw.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,w3schools.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wattpad.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,whoer.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wikimapia.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wikipedia.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wire.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,worldcat.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wsj.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wsj.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,xboxlive.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,xvideos.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,yahoo.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,yesasia.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,yes-news.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,yomiuri.co.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,you-get.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,zb.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,zello.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,zeronet.io,❤️vpnhat❤️
+- DOMAIN,cdn-images.mailchimp.com,❤️vpnhat❤️
+- DOMAIN,id.heroku.com,❤️vpnhat❤️
+- DOMAIN-KEYWORD,github,❤️vpnhat❤️
+- DOMAIN-KEYWORD,jav,❤️vpnhat❤️
+- DOMAIN-KEYWORD,pinterest,❤️vpnhat❤️
+- DOMAIN-KEYWORD,porn,❤️vpnhat❤️
+- DOMAIN-KEYWORD,wikileaks,❤️vpnhat❤️
+
+# (Region-Restricted Access Denied)
+- DOMAIN-SUFFIX,apartmentratings.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,apartments.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bankmobilevibe.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bing.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,booktopia.com.au,❤️vpnhat❤️
+- DOMAIN-SUFFIX,centauro.com.br,❤️vpnhat❤️
+- DOMAIN-SUFFIX,clearsurance.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,costco.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,crackle.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,depositphotos.cn,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dish.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dmm.co.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dmm.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dnvod.tv,❤️vpnhat❤️
+- DOMAIN-SUFFIX,esurance.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,extmatrix.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fastpic.ru,❤️vpnhat❤️
+- DOMAIN-SUFFIX,flipboard.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fnac.be,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fnac.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,funkyimg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,fxnetworks.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gettyimages.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,jcpenney.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,kknews.cc,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nationwide.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nbc.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nordstrom.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nordstromimage.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,nordstromrack.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,read01.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,superpages.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,target.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,thinkgeek.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,tracfone.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,uploader.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,vevo.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,viu.tv,❤️vpnhat❤️
+- DOMAIN-SUFFIX,vk.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,vsco.co,❤️vpnhat❤️
+- DOMAIN-SUFFIX,xfinity.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,zattoo.com,❤️vpnhat❤️
+- DOMAIN,abc.com,❤️vpnhat❤️
+- DOMAIN,abc.go.com,❤️vpnhat❤️
+- DOMAIN,abc.net.au,❤️vpnhat❤️
+- DOMAIN,wego.here.com,❤️vpnhat❤️
+#USER-AGENT,Roam*,❤️vpnhat❤️
+
+# (The Most Popular Sites)
+# > Apple
+# > Apple URL Shortener
+- DOMAIN-SUFFIX,appsto.re,❤️vpnhat❤️
+#- DOMAIN-SUFFIX,appsto.re,❤️vpnhat❤️ 
+
+# > TestFlight
+- DOMAIN,beta.itunes.apple.com,❤️vpnhat❤️
+# > iBooks Store download
+- DOMAIN,books.itunes.apple.com,❤️vpnhat❤️
+# > iTunes Store Moveis Trailers
+- DOMAIN,hls.itunes.apple.com,❤️vpnhat❤️
+# App Store Preview
+- DOMAIN,itunes.apple.com,❤️vpnhat❤️
+# > Spotlight
+- DOMAIN,api-glb-sea.smoot.apple.com,❤️vpnhat❤️
+# > Dictionary
+- DOMAIN,lookup-api.apple.com,❤️vpnhat❤️
+#PROCESS-NAME,LookupViewService,❤️vpnhat❤️
+# > Google
+- DOMAIN-SUFFIX,abc.xyz,❤️vpnhat❤️
+- DOMAIN-SUFFIX,android.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,androidify.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dialogflow.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,autodraw.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,capitalg.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,certificate-transparency.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,chrome.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,chromeexperiments.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,chromestatus.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,chromium.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,creativelab5.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,debug.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,deepmind.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,firebaseio.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,getmdl.io,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ggpht.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gmail.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gmodules.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,godoc.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,golang.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gstatic.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gv.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gwtproject.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,itasoftware.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,madewithcode.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,material.io,❤️vpnhat❤️
+- DOMAIN-SUFFIX,polymer-project.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,admin.recaptcha.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,recaptcha.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,shattered.io,❤️vpnhat❤️
+- DOMAIN-SUFFIX,synergyse.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,tensorflow.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,tiltbrush.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,waveprotocol.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,waymo.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,webmproject.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,webrtc.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,whatbrowser.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,widevine.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,x.company,❤️vpnhat❤️
+- DOMAIN-SUFFIX,youtu.be,❤️vpnhat❤️
+- DOMAIN-SUFFIX,yt.be,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ytimg.com,❤️vpnhat❤️
+# > Steam
+- DOMAIN,media.steampowered.com,❤️vpnhat❤️
+- DOMAIN,store.steampowered.com,❤️vpnhat❤️
+# > Other
+- DOMAIN-SUFFIX,0rz.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,4bluestones.biz,❤️vpnhat❤️
+- DOMAIN-SUFFIX,9bis.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,allconnected.co,❤️vpnhat❤️
+- DOMAIN-SUFFIX,amazonaws.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,aol.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bcc.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bit.ly,❤️vpnhat❤️
+- DOMAIN-SUFFIX,bitshare.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,blog.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,blogimg.jp,❤️vpnhat❤️
+- DOMAIN-SUFFIX,blogtd.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,broadcast.co.nz,❤️vpnhat❤️
+- DOMAIN-SUFFIX,camfrog.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cfos.de,❤️vpnhat❤️
+- DOMAIN-SUFFIX,citypopulation.de,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cloudfront.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ctitv.com.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cuhk.edu.hk,❤️vpnhat❤️
+- DOMAIN-SUFFIX,cusu.hk,❤️vpnhat❤️
+- DOMAIN-SUFFIX,discuss.com.hk,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dropboxapi.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,edditstatic.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,flickriver.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,focustaiwan.tw,❤️vpnhat❤️
+- DOMAIN-SUFFIX,free.fr,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ftchinese.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gigacircle.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,gov,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hk-pub.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hosting.co.uk,❤️vpnhat❤️
+- DOMAIN-SUFFIX,hwcdn.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,jtvnw.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,linksalpha.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,manyvids.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,myactimes.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,newsblur.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,now.im,❤️vpnhat❤️
+- DOMAIN-SUFFIX,redditlist.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,signal.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,sparknotes.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,streetvoice.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,ttvnw.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,tv.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,twitchcdn.net,❤️vpnhat❤️
+- DOMAIN-SUFFIX,typepad.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,udnbkk.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,whispersystems.org,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wikia.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wn.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,wolframalpha.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,x-art.com,❤️vpnhat❤️
+- DOMAIN-SUFFIX,yimg.com,❤️vpnhat❤️
+
+- DOMAIN-KEYWORD,dlercloud,❤️vpnhat❤️
+- DOMAIN-SUFFIX,dler.cloud,❤️vpnhat❤️
+
+# Local Area Network
+- DOMAIN-KEYWORD,announce,DIRECT
+- DOMAIN-KEYWORD,torrent,DIRECT
+- DOMAIN-KEYWORD,tracker,DIRECT
+- DOMAIN-SUFFIX,smtp,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+
+# > IQIYI
+- IP-CIDR,101.227.0.0/16,AsianTV
+- IP-CIDR,101.224.0.0/13,AsianTV
+- IP-CIDR,119.176.0.0/12,AsianTV
+
+# > Youku
+- IP-CIDR,106.11.0.0/16,AsianTV
+
+# > Telegram
+- IP-CIDR,67.198.55.0/24,❤️vpnhat❤️
+- IP-CIDR,91.108.4.0/22,❤️vpnhat❤️
+- IP-CIDR,91.108.8.0/22,❤️vpnhat❤️
+- IP-CIDR,91.108.12.0/22,❤️vpnhat❤️
+- IP-CIDR,91.108.16.0/22,❤️vpnhat❤️
+- IP-CIDR,91.108.56.0/22,❤️vpnhat❤️
+- IP-CIDR,109.239.140.0/24,❤️vpnhat❤️
+- IP-CIDR,149.154.160.0/20,❤️vpnhat❤️
+- IP-CIDR,205.172.60.0/22,❤️vpnhat❤️
+
+# (Extra IP-CIRD)
+# > Google
+- IP-CIDR,35.190.247.0/24,❤️vpnhat❤️
+- IP-CIDR,64.233.160.0/19,❤️vpnhat❤️
+- IP-CIDR,66.102.0.0/20,❤️vpnhat❤️
+- IP-CIDR,66.249.80.0/20,❤️vpnhat❤️
+- IP-CIDR,72.14.192.0/18,❤️vpnhat❤️
+- IP-CIDR,74.125.0.0/16,❤️vpnhat❤️
+- IP-CIDR,108.177.8.0/21,❤️vpnhat❤️
+- IP-CIDR,172.217.0.0/16,❤️vpnhat❤️
+- IP-CIDR,173.194.0.0/16,❤️vpnhat❤️
+- IP-CIDR,209.85.128.0/17,❤️vpnhat❤️
+- IP-CIDR,216.58.192.0/19,❤️vpnhat❤️
+- IP-CIDR,216.239.32.0/19,❤️vpnhat❤️
+# > Facebook
+- IP-CIDR,31.13.24.0/21,❤️vpnhat❤️
+- IP-CIDR,31.13.64.0/18,❤️vpnhat❤️
+- IP-CIDR,45.64.40.0/22,❤️vpnhat❤️
+- IP-CIDR,66.220.144.0/20,❤️vpnhat❤️
+- IP-CIDR,69.63.176.0/20,❤️vpnhat❤️
+- IP-CIDR,69.171.224.0/19,❤️vpnhat❤️
+- IP-CIDR,74.119.76.0/22,❤️vpnhat❤️
+- IP-CIDR,103.4.96.0/22,❤️vpnhat❤️
+- IP-CIDR,129.134.0.0/17,❤️vpnhat❤️
+- IP-CIDR,157.240.0.0/17,❤️vpnhat❤️
+- IP-CIDR,173.252.64.0/19,❤️vpnhat❤️
+- IP-CIDR,173.252.96.0/19,❤️vpnhat❤️
+- IP-CIDR,179.60.192.0/22,❤️vpnhat❤️
+- IP-CIDR,185.60.216.0/22,❤️vpnhat❤️
+- IP-CIDR,204.15.20.0/22,❤️vpnhat❤️
+# > Twitter
+- IP-CIDR,69.195.160.0/19,❤️vpnhat❤️
+- IP-CIDR,104.244.42.0/21,❤️vpnhat❤️
+- IP-CIDR,192.133.76.0/22,❤️vpnhat❤️
+- IP-CIDR,199.16.156.0/22,❤️vpnhat❤️
+- IP-CIDR,199.59.148.0/22,❤️vpnhat❤️
+- IP-CIDR,199.96.56.0/21,❤️vpnhat❤️
+- IP-CIDR,202.160.128.0/22,❤️vpnhat❤️
+- IP-CIDR,209.237.192.0/19,❤️vpnhat❤️
+
+# GeoIP China
+- GEOIP,CN,Domestic
+
+- MATCH,Others
