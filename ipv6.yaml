@@ -5,95 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {"name":"meta_hysteria_01","type":"hysteria","server":"167.160.90.251","port":48089,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_hysteria_02","type":"hysteria","server":"108.181.22.239","port":41146,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_hysteria_11","type":"hysteria","server":"108.181.22.213","port":52284,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_hysteria_21","type":"hysteria","server":"108.181.22.155","port":19721,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_hysteria_31","type":"hysteria","server":"104.234.70.41","port":57153,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_hysteria_51","type":"hysteria","server":"104.234.70.6","port":16117,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_hysteria_61","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":100,"down":550}
-  - {"name":"meta_tuic_71","type":"tuic","server":"64.110.25.10","port":11227,"password":"dongtaiwang.com","uuid":"764b539f-2d3c-4772-9731-5ebf6984af98","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
-  - {"name":"meta_hysteria_81","type":"hysteria","server":"62.204.54.81","port":46333,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":50,"down":1000}
-  - {"name":"meta_hysteria_91","type":"hysteria","server":"www.dtku50.xyz","port":23577,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":200,"down":1000}
-  - {"name":"hysteria_0","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":80,"down":1000,"fast-open":true}
-  - {"name":"hysteria_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":1000,"fast-open":true}
-  - {"name":"hysteria_2","type":"hysteria","server":"108.181.22.239","port":39967,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":80,"down":1000,"fast-open":true}
-  - {"name":"hysteria_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":1000,"fast-open":true}
-  - {"name":"hysteria2_0","type":"hysteria2","server":"www.dtku46.xyz","port":18417,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
-  - {"name":"hysteria2_1","type":"hysteria2","server":"108.181.22.155","port":40246,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
-  - {"name":"hysteria2_3","type":"hysteria2","server":"108.181.22.155","port":40246,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"United States_hysteria_01","type":"hysteria","server":"167.160.90.251","port":48089,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"United States_hysteria_02","type":"hysteria","server":"108.181.22.239","port":41146,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"United States_hysteria_11","type":"hysteria","server":"108.181.22.213","port":52284,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"United States_hysteria_21","type":"hysteria","server":"108.181.22.155","port":19721,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"Canada_hysteria_31","type":"hysteria","server":"104.234.70.41","port":57153,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"Taiwan_hysteria_41","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"Canada_hysteria_51","type":"hysteria","server":"104.234.70.6","port":16117,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"Taiwan_hysteria_61","type":"hysteria","server":"www.dtku46.xyz","port":11223,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","up":110,"down":550}
+  - {"name":"United States_tuic_71","type":"tuic","server":"64.110.25.10","port":11227,"password":"dongtaiwang.com","uuid":"764b539f-2d3c-4772-9731-5ebf6984af98","sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"request-timeout":8000,"udp-relay-mode":"native","congestion-controller":"bbr"}
+  - {"name":"United States_hysteria_81","type":"hysteria","server":"62.204.54.81","port":46333,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":100,"down":1000}
+  - {"name":"Taiwan_hysteria_91","type":"hysteria","server":"www.dtku50.xyz","port":23577,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":100,"down":1000}
+  - {"name":"United States_hy_0","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":80,"down":1000,"fast-open":true}
+  - {"name":"United States_hy_1","type":"hysteria","server":"173.234.25.52","port":20164,"sni":"www.microsoft.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F","up":80,"down":1000,"fast-open":true}
+  - {"name":"United States_hy_2","type":"hysteria","server":"108.181.22.239","port":39967,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":80,"down":1000,"fast-open":true}
+  - {"name":"France_hy_3","type":"hysteria","server":"51.158.54.46","port":11926,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs","up":80,"down":1000,"fast-open":true}
+  - {"name":"Taiwan_hy2_0","type":"hysteria2","server":"www.dtku46.xyz","port":55307,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"United States_hy2_1","type":"hysteria2","server":"108.181.22.155","port":27710,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"United States_hy2_2","type":"hysteria2","server":"167.160.90.252","port":63530,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
+  - {"name":"United States_hy2_3","type":"hysteria2","server":"108.181.22.155","port":27710,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true,"fast-open":true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -112,24 +116,25 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -140,71 +145,74 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -220,24 +228,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - meta_hysteria_01
-      - meta_hysteria_02
-      - meta_hysteria_11
-      - meta_hysteria_21
-      - meta_hysteria_31
-      - meta_hysteria_41
-      - meta_hysteria_51
-      - meta_hysteria_61
-      - meta_tuic_71
-      - meta_hysteria_81
-      - meta_hysteria_91
-      - hysteria_0
-      - hysteria_1
-      - hysteria_2
-      - hysteria_3
-      - hysteria2_0
-      - hysteria2_1
-      - hysteria2_3
+      - United States_hysteria_01
+      - United States_hysteria_02
+      - United States_hysteria_11
+      - United States_hysteria_21
+      - Canada_hysteria_31
+      - Taiwan_hysteria_41
+      - Canada_hysteria_51
+      - Taiwan_hysteria_61
+      - United States_tuic_71
+      - United States_hysteria_81
+      - Taiwan_hysteria_91
+      - United States_hy_0
+      - United States_hy_1
+      - United States_hy_2
+      - France_hy_3
+      - Taiwan_hy2_0
+      - United States_hy2_1
+      - United States_hy2_2
+      - United States_hy2_3
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
