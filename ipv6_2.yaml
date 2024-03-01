@@ -5,14 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {"name":"United States_vless_1","type":"vless","server":"64.31.55.42","port":23514,"udp":true,"uuid":"b17fa17d-13a0-4e8a-a398-8e549ea8b208","tls":true,"servername":"","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"ew6CB407JaI_WVD7QlD5QuvJTD7Pbv1oEbtis35-MRM"},"client-fingerprint":"chrome"}
-  - {"name":"None_vmess_1_1","type":"vmess","server":"fbi.gov","port":8080,"cipher":"auto","uuid":"fbi.gov:8080?security=none&allowInsecure0&type=ws&fp=chrome&sni=configured-creek-relating-theater.trycloudflare.com&path=9084653a-ee34-4293-979e-7c2b50dffb84-vm&host=#None_vmess_1","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"9084653a-ee34-4293-979e-7c2b50dffb84-vm"}}
-  - {"name":"None_vmess_1_2","type":"vmess","server":"fbi.gov","port":8080,"cipher":"auto","uuid":"fbi.gov:8080?security=none&allowInsecure0&type=ws&fp=chrome&sni=per-essex-patterns-bowling.trycloudflare.com&path=ac750859-79e7-4507-ba93-e92584ac49e3-vm&host=#None_vmess_1","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"per-essex-patterns-bowling.trycloudflare.com","network":"ws","ws-opts":{"path":"ac750859-79e7-4507-ba93-e92584ac49e3-vm"}}
-  - {"name":"None_vmess_1_3","type":"vmess","server":"fbi.gov","port":8080,"cipher":"auto","uuid":"fbi.gov:8080?security=none&allowInsecure0&type=ws&fp=chrome&sni=uh-lawyers-instruments-kernel.trycloudflare.com&path=5f7934bf-a228-49a7-9572-5ce4377c34d5-vm&host=#None_vmess_1","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"uh-lawyers-instruments-kernel.trycloudflare.com","network":"ws","ws-opts":{"path":"5f7934bf-a228-49a7-9572-5ce4377c34d5-vm"}}
-  - {"name":"None_vmess_1_4","type":"vmess","server":"fbi.gov","port":8080,"cipher":"auto","uuid":"fbi.gov:8080?security=none&allowInsecure0&type=ws&fp=chrome&sni=widescreen-instruction-breakdown-postage.trycloudflare.com&path=0e5da13a-b148-4889-9d72-ad1d9d5aa9ad-vm&host=#None_vmess_1","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"widescreen-instruction-breakdown-postage.trycloudflare.com","network":"ws","ws-opts":{"path":"0e5da13a-b148-4889-9d72-ad1d9d5aa9ad-vm"}}
   - {"name":"Taiwan_hy_6","type":"hysteria","server":"www2.dtku48.xyz","port":22334,"skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":150,"down":800}
   - {"name":"France_hy2_7","type":"hysteria2","server":"51.159.77.153","port":33390,"password":"dongtaiwang.com","sni":"bing.com","skip-cert-verify":true}
-  - {"name":"United States_hy2_8","type":"hysteria2","server":"45.150.165.84","port":8881,"password":"d017e316-82cb-441c-8eea-7b5e9de64a20","skip-cert-verify":true,"obfs":"salamander","obfs-password":"d017e316-82cb-441c-8eea-7b5e9de64a20"}
+  - {"name":"United States_vless_8","type":"vless","server":"45.145.72.212","port":11223,"udp":true,"uuid":"34d7aac1-fac7-4e17-b41e-5be028d286cd","tls":true,"servername":"","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"u24pYS0RqtYk8NBqtg4NIHUZIA0HmwuYw2RBIyt0T0c"},"client-fingerprint":"chrome"}
   - {"name":"Taiwan_hy_9","type":"hysteria","server":"www.dtku50.xyz","port":18470,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"","up":150,"down":800}
   - {"name":"France_hysteria_0","type":"hysteria","server":"51.158.54.46","port":55396,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":110,"down":550}
   - {"name":"United%20States_hysteria_1","type":"hysteria","server":"173.234.25.52","port":48919,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":110,"down":550}
@@ -21,31 +16,27 @@ proxies:
   - {"name":"France_hysteria2_0","type":"hysteria2","server":"62.210.103.0","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"United States_hysteria2_1","type":"hysteria2","server":"64.110.25.11","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"France_hysteria2_2","type":"hysteria2","server":"62.210.103.0","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"France_hysteria2_3","type":"hysteria2","server":"51.159.77.198","port":29277,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"France_hysteria2_3","type":"hysteria2","server":"51.159.77.198","port":53967,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"None_vless_1","type":"vless","server":"yh1.dtku41.xyz","port":443,"uuid":"ebfdccb6-7416-4b6e-860d-98587344d500","tls":true,"servername":"lg1.freessr2.xyz","flow":"","network":"ws","ws-opts":{"path":"/xyakws","headers":{"host":"lg1.freessr2.xyz"}},"client-fingerprint":"chrome"}
   - {"name":"France_vless_2","type":"vless","server":"62.210.101.0","port":18700,"udp":true,"uuid":"e659661d-8439-46e0-b1ab-d75ceaf73404","tls":true,"servername":"","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"France_vless_3","type":"vless","server":"62.210.101.0","port":18700,"udp":true,"uuid":"e659661d-8439-46e0-b1ab-d75ceaf73404","tls":true,"servername":"","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"France, Neuilly-sur-Seine_1","type":"hysteria2","server":"62.210.103.0","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"United States, Los Angeles","type":"hysteria2","server":"64.110.25.11","port":33337,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"France, Paris","type":"hysteria2","server":"51.159.77.198","port":29277,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
+  - {"name":"France, Paris","type":"hysteria2","server":"51.159.77.198","port":53967,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
   - {"name":"France, Neuilly-sur-Seine_2","type":"hysteria2","server":"62.210.103.0","port":22483,"password":"dongtaiwang.com","sni":"www.bing.com","skip-cert-verify":true}
-  - {"name":"United%20States%2C%20Los%20Angeles_1","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":55,"down":110}
-  - {"name":"France%2C%20Paris","type":"hysteria","server":"51.158.54.46","port":55396,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":55,"down":110}
-  - {"name":"United%20States%2C%20Los%20Angeles_2","type":"hysteria","server":"173.234.25.52","port":48919,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":55,"down":110}
-  - {"name":"Taiwan%2C%20New%20Taipei","type":"hysteria","server":"www.dtku40.xyz","port":18490,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":55,"down":110}
+  - {"name":"United%20States%2C%20Los%20Angeles_1","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":550,"down":1100}
+  - {"name":"France%2C%20Paris","type":"hysteria","server":"51.158.54.46","port":55396,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":550,"down":1100}
+  - {"name":"United%20States%2C%20Los%20Angeles_2","type":"hysteria","server":"173.234.25.52","port":48919,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":550,"down":1100}
+  - {"name":"Taiwan%2C%20Taipei","type":"hysteria","server":"www.dtku40.xyz","port":18490,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":550,"down":1100}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -55,6 +46,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -64,20 +56,15 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -87,6 +74,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -96,21 +84,16 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -120,6 +103,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -129,7 +113,7 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -148,14 +132,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -165,6 +144,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -174,7 +154,7 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -185,14 +165,9 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -202,6 +177,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -211,20 +187,15 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -234,6 +205,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -243,21 +215,16 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -267,6 +234,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -276,7 +244,7 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -292,14 +260,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - United States_vless_1
-      - None_vmess_1_1
-      - None_vmess_1_2
-      - None_vmess_1_3
-      - None_vmess_1_4
       - Taiwan_hy_6
       - France_hy2_7
-      - United States_hy2_8
+      - United States_vless_8
       - Taiwan_hy_9
       - France_hysteria_0
       - United%20States_hysteria_1
@@ -309,6 +272,7 @@ proxy-groups:
       - United States_hysteria2_1
       - France_hysteria2_2
       - France_hysteria2_3
+      - None_vless_1
       - France_vless_2
       - France_vless_3
       - France, Neuilly-sur-Seine_1
@@ -318,7 +282,7 @@ proxy-groups:
       - United%20States%2C%20Los%20Angeles_1
       - France%2C%20Paris
       - United%20States%2C%20Los%20Angeles_2
-      - Taiwan%2C%20New%20Taipei
+      - Taiwan%2C%20Taipei
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
